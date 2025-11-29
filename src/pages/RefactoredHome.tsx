@@ -1,15 +1,17 @@
 import { useState, useEffect, useRef } from 'react';
-import JapanesePatternBackground from '../components/JapanesePatternBackground';
-import JapaneseHeader from '../components/JapaneseHeader';
-import StockBoardDisplay from '../components/StockBoardDisplay';
-import JapaneseNewsBanner from '../components/JapaneseNewsBanner';
-import WavePatternDivider from '../components/WavePatternDivider';
-import JapaneseFormCard from '../components/JapaneseFormCard';
-import JapaneseStockInput from '../components/JapaneseStockInput';
-import JapaneseActionButton from '../components/JapaneseActionButton';
-import SealBadge from '../components/SealBadge';
-import InlineLoadingScene from '../components/InlineLoadingScene';
-import DiagnosisModal from '../components/DiagnosisModal';
+import SoftBackground from '../components/SoftBackground';
+import SoftHeader from '../components/SoftHeader';
+import SoftStockDisplay from '../components/SoftStockDisplay';
+import SoftActivityFeed from '../components/SoftActivityFeed';
+import SoftDivider from '../components/SoftDivider';
+import SoftFormCard from '../components/SoftFormCard';
+import SoftStockInput from '../components/SoftStockInput';
+import SoftActionButton from '../components/SoftActionButton';
+import SoftTrustBadges from '../components/SoftTrustBadges';
+import SoftLoadingAnimation from '../components/SoftLoadingAnimation';
+import SoftModal from '../components/SoftModal';
+import AnalysisRenderer from '../components/AnalysisRenderer';
+import { Sparkles } from 'lucide-react';
 import { StockData } from '../types/stock';
 import { DiagnosisState } from '../types/diagnosis';
 import { useUrlParams } from '../hooks/useUrlParams';
@@ -485,98 +487,131 @@ export default function RefactoredHome() {
 
   return (
     <div className="min-h-screen relative flex flex-col">
-      <JapanesePatternBackground />
+      <SoftBackground />
 
       <div className="relative z-10 flex flex-col">
-        <JapaneseHeader />
+        <SoftHeader />
 
         {!showLoadingScene ? (
-          <div className="flex-1 flex flex-col py-8">
-            <div className="container mx-auto px-4 space-y-8">
-              <StockBoardDisplay />
-
-              <WavePatternDivider color="#1A2B4F" />
-
-              <JapaneseNewsBanner />
-
-              <WavePatternDivider color="#E60012" flip />
-
-              <div className="flex justify-center space-x-6 my-8">
-                <SealBadge text="信頼" subText="安心" />
-                <SealBadge text="無料" subText="完全" />
-                <SealBadge text="迅速" subText="即時" />
+          <div className="flex-1 flex flex-col py-12">
+            <div className="container mx-auto space-y-12">
+              <div className="text-center space-y-4 px-4 py-8">
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
+                  やさしいAI株式診断
+                </h1>
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                  人工知能があなたの投資をサポートします。銘柄を入力して、無料で詳細な分析を受け取りましょう。
+                </p>
               </div>
 
-              <JapaneseFormCard>
-                <JapaneseStockInput
+              <SoftActivityFeed records={diagnosisRecords} />
+
+              <SoftDivider />
+
+              <SoftTrustBadges />
+
+              <SoftDivider />
+
+              {stockData && (
+                <SoftStockDisplay info={stockData.info} price={stockData.price} />
+              )}
+
+              <SoftFormCard>
+                <SoftStockInput
                   value={inputValue}
                   onChange={setInputValue}
-                  onStockSelect={handleStockSelect}
+                  onSelect={handleStockSelect}
+                  suggestions={search(inputValue)}
+                  autoFillMessage={autoFillMessage}
                 />
 
-                {autoFillMessage && (
-                  <div className="text-center py-2 text-sm text-green-600 font-medium animate-fadeIn">
-                    {autoFillMessage}
-                  </div>
-                )}
-
                 {loading && (
-                  <div className="text-center py-4 animate-fadeIn">
-                    <div className="inline-block animate-spin rounded-full h-8 w-8 border-4 border-gray-200 border-t-gray-900"></div>
-                    <p className="mt-2 text-gray-600 text-sm">Loading...</p>
+                  <div className="text-center py-6 animate-fadeIn">
+                    <div className="inline-block animate-spin rounded-full h-10 w-10 border-4 border-emerald-200 border-t-emerald-500"></div>
+                    <p className="mt-3 text-gray-600 text-sm">株式情報を読み込み中...</p>
                   </div>
                 )}
 
                 {error && diagnosisState !== 'error' && (
-                  <div className="bg-red-50 border border-red-200 rounded-xl p-3 text-center animate-fadeIn mt-4">
-                    <p className="text-red-600 text-sm font-semibold">{error}</p>
+                  <div className="bg-gradient-to-r from-rose-50 to-pink-50 border border-rose-200 rounded-2xl p-4 text-center animate-fadeIn mt-4">
+                    <p className="text-rose-600 text-sm font-medium">{error}</p>
                   </div>
                 )}
 
                 {!loading && diagnosisState === 'initial' && (
                   <div className="mt-6">
-                    <JapaneseActionButton onClick={runDiagnosis} disabled={!inputValue || !stockCode}>
+                    <SoftActionButton
+                      onClick={runDiagnosis}
+                      disabled={!inputValue || !stockCode}
+                      icon={<Sparkles size={20} />}
+                    >
                       無料で診断を開始
-                    </JapaneseActionButton>
+                    </SoftActionButton>
                   </div>
                 )}
 
                 {diagnosisState === 'error' && (
-                  <div className="bg-red-50 border-2 border-red-600 rounded-lg p-4 text-center animate-fadeIn mt-4">
-                    <h3 className="text-lg font-bold text-red-600 mb-2">診断エラー</h3>
-                    <p className="text-red-600 text-sm mb-4 whitespace-pre-line">{error}</p>
+                  <div className="bg-gradient-to-r from-rose-50 to-pink-50 border-2 border-rose-300 rounded-2xl p-6 text-center animate-fadeIn mt-4">
+                    <h3 className="text-xl font-semibold text-rose-700 mb-3">診断エラー</h3>
+                    <p className="text-rose-600 text-sm mb-6 whitespace-pre-line">{error}</p>
                     <button
                       onClick={() => {
                         setDiagnosisState('initial');
                         setError(null);
                       }}
-                      className="px-6 py-3 bg-gray-900 text-white font-bold rounded transition-all shadow-lg hover:opacity-90"
+                      className="px-8 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white font-semibold rounded-full transition-all shadow-lg hover:scale-105 active:scale-95"
                     >
                       もう一度試す
                     </button>
                   </div>
                 )}
-              </JapaneseFormCard>
+              </SoftFormCard>
             </div>
           </div>
         ) : (
-          <div className="flex-1 flex items-center justify-center">
-            <InlineLoadingScene isVisible={showLoadingScene} />
+          <div className="flex-1 flex items-center justify-center py-12">
+            <SoftLoadingAnimation progress={loadingProgress} />
           </div>
         )}
       </div>
 
-      <DiagnosisModal
+      <SoftModal
         isOpen={diagnosisState === 'streaming' || diagnosisState === 'results'}
         onClose={closeModal}
-        analysis={analysisResult}
-        stockCode={inputValue}
-        stockName={stockData?.info.name || inputValue}
-        onLineConversion={handleLineConversion}
-        onReportDownload={handleReportDownload}
-        isStreaming={diagnosisState === 'streaming'}
-        isConnecting={diagnosisState === 'connecting'}
-      />
+        title="AI診断結果"
+      >
+        <div className="p-8">
+          <div className="mb-6 pb-6 border-b border-gray-100">
+            <h3 className="text-2xl font-bold text-gray-800 mb-2">{stockData?.info.name}</h3>
+            <p className="text-sm text-gray-500">銘柄コード: {stockCode}</p>
+          </div>
+
+          <div className="prose max-w-none">
+            <AnalysisRenderer analysis={analysisResult} />
+          </div>
+
+          {diagnosisState === 'results' && (
+            <div className="mt-8 pt-8 border-t border-gray-100 space-y-4">
+              <button
+                onClick={handleLineConversion}
+                className="w-full h-14 px-8 rounded-full font-semibold text-white text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+                style={{
+                  background: 'linear-gradient(135deg, #06C755 0%, #00B900 100%)',
+                  boxShadow: '0 4px 16px rgba(6, 199, 85, 0.4)',
+                }}
+              >
+                LINE公式アカウントで最新情報を受け取る
+              </button>
+              <button
+                onClick={handleReportDownload}
+                className="w-full h-14 px-8 rounded-full font-semibold text-gray-700 text-base border-2 border-gray-200 transition-all duration-300 hover:border-emerald-300 hover:bg-emerald-50"
+              >
+                診断レポートをダウンロード
+              </button>
+            </div>
+          )}
+        </div>
+      </SoftModal>
     </div>
   );
 }
