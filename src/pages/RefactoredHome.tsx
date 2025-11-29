@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import SoftBackground from '../components/SoftBackground';
 import SoftHeader from '../components/SoftHeader';
-import SoftStockDisplay from '../components/SoftStockDisplay';
 import DiagnosisTickerBanner from '../components/DiagnosisTickerBanner';
 import SoftDivider from '../components/SoftDivider';
 import SoftFormCard from '../components/SoftFormCard';
@@ -508,20 +507,6 @@ export default function RefactoredHome() {
               <DiagnosisTickerBanner records={diagnosisRecords} />
 
               <SoftDivider />
-
-              {stockData && (() => {
-                const latestPrice = stockData.prices && stockData.prices.length > 0 ? stockData.prices[0] : null;
-                const priceData = {
-                  current: parseFloat(stockData.info.price) || 0,
-                  open: latestPrice ? parseFloat(latestPrice.open) || 0 : 0,
-                  high: latestPrice ? parseFloat(latestPrice.high) || 0 : 0,
-                  low: latestPrice ? parseFloat(latestPrice.low) || 0 : 0,
-                  change: parseFloat(stockData.info.change) || 0,
-                  changePercent: parseFloat(stockData.info.changePercent) || 0,
-                  volume: latestPrice ? parseFloat(latestPrice.volume) || 0 : 0
-                };
-                return <SoftStockDisplay info={stockData.info} price={priceData} />;
-              })()}
 
               <SoftFormCard>
                 <SoftStockInput
