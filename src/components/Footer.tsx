@@ -138,37 +138,19 @@ export default function Footer() {
                     お問い合わせフォーム
                   </Link>
                 </li>
-                <li className="flex items-center gap-2 text-gray-600">
-                  <Mail className="w-3.5 h-3.5 text-rose-400" />
-                  <span>support@stockofficial.com</span>
-                </li>
-                <li className="text-gray-500 text-xs pl-5">
-                  受付時間: 24時間受付（返信は営業日内）
-                </li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-gray-200 pt-6 text-center">
             <p className="text-sm text-gray-800 mb-2 font-medium">
-              &copy; {currentYear} 株式会社アドバンス (Advance Co., Ltd.). All rights reserved.
+              &copy; {currentYear} 株式会社イービット (Ebit Co., Ltd.). All rights reserved.
             </p>
-            <p className="text-xs text-gray-600 leading-relaxed max-w-3xl mx-auto mb-6">
+            <p className="text-xs text-gray-600 leading-relaxed max-w-3xl mx-auto">
               当サイトで提供される情報は投資勧誘を目的としたものではありません。
               投資に関する最終決定は、利用者ご自身の判断でなさるようお願いいたします。
               掲載されている情報の正確性については万全を期しておりますが、その内容の正確性、安全性、有用性を保証するものではありません。
             </p>
-
-            <div className="text-xs text-gray-500 space-y-2">
-              <p>株式会社アドバンス（Advance Co., Ltd.）</p>
-              <p>〒101-0032 東京都千代田区岩本町2-8-2 都ビジネスビル9階</p>
-              <div className="flex flex-wrap justify-center gap-2 mt-3">
-                <span className="px-3 py-1 bg-gray-100 rounded-full text-xs">AI株式診断サービス</span>
-                <span className="px-3 py-1 bg-gray-100 rounded-full text-xs">デジタルマーケティング</span>
-                <span className="px-3 py-1 bg-gray-100 rounded-full text-xs">広告運用</span>
-                <span className="px-3 py-1 bg-gray-100 rounded-full text-xs">データ分析</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>

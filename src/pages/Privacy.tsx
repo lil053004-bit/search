@@ -27,7 +27,7 @@ export default function Privacy() {
             <section className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 mb-4">1. 基本方針</h2>
               <p className="text-gray-700 leading-relaxed">
-                AI株式診断サービス（以下「当サービス」）の運営者である株式会社アドバンス（以下「当社」）は、利用者の個人情報の重要性を認識し、
+                AI株式分析サービス（以下「当サービス」）の運営者である株式会社イービット（以下「当社」）は、利用者の個人情報の重要性を認識し、
                 個人情報の保護に関する法律（個人情報保護法）を遵守し、適切に取り扱い、保護することに努めます。
               </p>
             </section>
@@ -140,19 +140,25 @@ export default function Privacy() {
                 本ポリシーに関するご質問、個人情報の取り扱いに関するご相談は、お問い合わせフォームよりご連絡ください。
               </p>
               <p className="text-sm text-gray-700 mb-2">
-                <strong>株式会社アドバンス (Advance Co., Ltd.)</strong>
+                <strong>株式会社イービット (Ebit Co., Ltd.)</strong>
               </p>
               <p className="text-sm text-gray-700 mb-2">
-                〒101-0032 東京都千代田区岩本町2-8-2 都ビジネスビル9階
+                〒150-0043 東京都渋谷区道玄坂2-10-12 新大宗ビル3号館
               </p>
               <p className="text-sm text-gray-700 mb-2">
-                設立: 2012年10月
+                Dogenzaka 2-10-12, Shibuya-ku, Tokyo
               </p>
               <p className="text-sm text-gray-700 mb-2">
-                メール: support@stockofficial.com
+                設立: 2015年4月
+              </p>
+              <p className="text-sm text-gray-700 mb-2">
+                電話: +81 03-5456-7890
+              </p>
+              <p className="text-sm text-gray-700 mb-2">
+                メール: wusegut647@gmail.com
               </p>
               <p className="text-sm text-gray-700">
-                受付時間: 24時間受付（返信は営業日内）
+                受付時間: 平日 9:00-18:00（土日祝日を除く）
               </p>
             </div>
           </div>

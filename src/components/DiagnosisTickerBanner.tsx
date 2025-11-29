@@ -17,17 +17,7 @@ export default function DiagnosisTickerBanner({ records }: DiagnosisTickerBanner
         <div className="flex items-center gap-4 mb-3">
           <div className="flex items-center gap-2 px-4 py-1.5 bg-white rounded-full shadow-sm border border-emerald-200">
             <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
-            <span className="text-sm font-semibold text-emerald-700">リアルタイム診断情報</span>
-          </div>
-          <div className="flex items-center gap-4 text-xs text-gray-600">
-            <div className="flex items-center gap-1.5">
-              <div className="w-2 h-2 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full"></div>
-              <span>本日: <strong className="text-gray-800">1,234件</strong></span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <div className="w-2 h-2 bg-gradient-to-r from-rose-400 to-pink-400 rounded-full"></div>
-              <span>今月: <strong className="text-gray-800">45,678件</strong></span>
-            </div>
+            <span className="text-sm font-semibold text-emerald-700">最近の分析事例</span>
           </div>
         </div>
 
@@ -60,7 +50,7 @@ export default function DiagnosisTickerBanner({ records }: DiagnosisTickerBanner
                       {record.time}
                     </span>
                     <span className="px-2 py-0.5 bg-emerald-50 text-emerald-600 text-xs font-semibold rounded-full">
-                      診断完了
+                      分析完了
                     </span>
                   </div>
                   <p className="text-sm font-semibold text-gray-800 truncate">{record.stock}</p>
@@ -82,7 +72,7 @@ export default function DiagnosisTickerBanner({ records }: DiagnosisTickerBanner
         }
 
         .animate-scroll {
-          animation: scroll 60s linear infinite;
+          animation: scroll 30s linear infinite;
         }
 
         .animate-scroll:hover {

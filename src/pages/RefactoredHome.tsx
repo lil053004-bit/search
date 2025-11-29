@@ -235,7 +235,7 @@ export default function RefactoredHome() {
       }
 
       if (!response.ok) {
-        throw new Error('AI診断に失敗しました');
+        throw new Error('AI分析に失敗しました');
       }
 
       setDiagnosisState('processing');
@@ -311,7 +311,7 @@ export default function RefactoredHome() {
         const result = await response.json();
 
         if (!result.analysis || result.analysis.trim() === '') {
-          throw new Error('診断結果が生成されませんでした');
+          throw new Error('分析結果が生成されませんでした');
         }
 
         setAnalysisResult(result.analysis);
@@ -333,7 +333,7 @@ export default function RefactoredHome() {
       }
     } catch (err) {
       console.error('Diagnosis error:', err);
-      let errorMessage = '診断中にエラーが発生しました';
+      let errorMessage = '分析中にエラーが発生しました';
       let errorDetails = '';
 
       if (err instanceof Error) {
@@ -542,14 +542,14 @@ export default function RefactoredHome() {
                       disabled={!inputValue || !stockCode}
                       icon={<Sparkles size={20} />}
                     >
-                      無料で診断を開始
+                      無料で情報を取得
                     </SoftActionButton>
                   </div>
                 )}
 
                 {diagnosisState === 'error' && (
                   <div className="bg-gradient-to-r from-rose-50 to-pink-50 border-2 border-rose-300 rounded-2xl p-4 text-center animate-fadeIn mt-2">
-                    <h3 className="text-xl font-semibold text-rose-700 mb-2">診断エラー</h3>
+                    <h3 className="text-xl font-semibold text-rose-700 mb-2">分析エラー</h3>
                     <p className="text-rose-600 text-sm mb-4 whitespace-pre-line">{error}</p>
                     <button
                       onClick={() => {
@@ -575,7 +575,7 @@ export default function RefactoredHome() {
       <SoftModal
         isOpen={diagnosisState === 'streaming' || diagnosisState === 'results'}
         onClose={closeModal}
-        title="AI診断結果"
+        title="AI分析結果"
       >
         <div className="p-8">
           <div className="mb-3 pb-3 border-b border-gray-100">
@@ -603,7 +603,7 @@ export default function RefactoredHome() {
                 onClick={handleReportDownload}
                 className="w-full h-14 px-8 rounded-full font-semibold text-gray-700 text-base border-2 border-gray-200 transition-all duration-300 hover:border-emerald-300 hover:bg-emerald-50"
               >
-                診断レポートをダウンロード
+                分析レポートをダウンロード
               </button>
             </div>
           )}

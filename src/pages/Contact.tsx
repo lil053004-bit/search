@@ -23,7 +23,7 @@ export default function Contact() {
 
           <div className="prose max-w-none">
             <p className="text-gray-700 leading-relaxed mb-8">
-              AI株式診断サービスをご利用いただき、誠にありがとうございます。
+              AI株式分析サービスをご利用いただき、誠にありがとうございます。
               ご質問、ご要望、不具合のご報告など、お気軽にお問い合わせください。
             </p>
 
@@ -32,11 +32,11 @@ export default function Contact() {
               <div className="bg-gradient-to-r from-sky-50 to-blue-50 rounded-2xl p-4 flex items-start gap-3">
                 <Clock className="w-5 h-5 text-sky-500 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-gray-900 mb-1">24時間受付</p>
+                  <p className="font-semibold text-gray-900 mb-1">平日 9:00-18:00</p>
                   <p className="text-sm text-gray-600">
-                    ※メールでのお問い合わせは24時間受け付けております<br />
-                    ※ご返信は営業日（平日 9:00-18:00）内に順次対応いたします<br />
-                    ※土日祝日、年末年始の返信は翌営業日となります
+                    ※お問い合わせは平日 9:00-18:00に受け付けております<br />
+                    ※土日祝日、年末年始は休業となります<br />
+                    ※返信には数営業日かかる場合がございます
                   </p>
                 </div>
               </div>
@@ -164,22 +164,28 @@ export default function Contact() {
                 運営会社情報
               </h3>
               <p className="text-sm text-gray-700 mb-2">
-                <strong>会社名:</strong> 株式会社アドバンス（Advance Co., Ltd.）
+                <strong>会社名:</strong> 株式会社イービット (Ebit Co., Ltd.)
               </p>
               <p className="text-sm text-gray-700 mb-2">
-                <strong>所在地:</strong> 〒101-0032 東京都千代田区岩本町2-8-2 都ビジネスビル9階
+                <strong>所在地:</strong> 〒150-0043 東京都渋谷区道玄坂2-10-12 新大宗ビル3号館
               </p>
               <p className="text-sm text-gray-700 mb-2">
-                <strong>設立:</strong> 2012年10月
+                Dogenzaka 2-10-12, Shibuya-ku, Tokyo
               </p>
               <p className="text-sm text-gray-700 mb-2">
-                <strong>業種:</strong> デジタルマーケティング／広告戦略・運用／データ分析
+                <strong>設立:</strong> 2015年4月
               </p>
               <p className="text-sm text-gray-700 mb-2">
-                <strong>メールアドレス:</strong> support@stockofficial.com
+                <strong>業種:</strong> AI技術を活用した情報提供サービス
+              </p>
+              <p className="text-sm text-gray-700 mb-2">
+                <strong>電話:</strong> +81 03-5456-7890
+              </p>
+              <p className="text-sm text-gray-700 mb-2">
+                <strong>メールアドレス:</strong> wusegut647@gmail.com
               </p>
               <p className="text-sm text-gray-700">
-                <strong>受付時間:</strong> 24時間受付（返信は営業日内）
+                <strong>受付時間:</strong> 平日 9:00-18:00（土日祝日を除く）
               </p>
             </div>
           </div>

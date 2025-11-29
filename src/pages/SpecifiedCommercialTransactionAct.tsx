@@ -1,4 +1,4 @@
-import { ArrowLeft, FileText, Building, Mail } from 'lucide-react';
+import { ArrowLeft, FileText, Building, Mail, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function SpecifiedCommercialTransactionAct() {
@@ -36,26 +36,27 @@ export default function SpecifiedCommercialTransactionAct() {
                   <dl className="space-y-3">
                     <div className="grid sm:grid-cols-3 gap-2">
                       <dt className="font-semibold text-gray-900">会社名</dt>
-                      <dd className="sm:col-span-2 text-gray-700">株式会社アドバンス</dd>
+                      <dd className="sm:col-span-2 text-gray-700">株式会社イービット</dd>
                     </div>
                     <div className="grid sm:grid-cols-3 gap-2">
                       <dt className="font-semibold text-gray-900">会社名（英語）</dt>
-                      <dd className="sm:col-span-2 text-gray-700">Advance Co., Ltd.</dd>
+                      <dd className="sm:col-span-2 text-gray-700">Ebit Co., Ltd.</dd>
                     </div>
                     <div className="grid sm:grid-cols-3 gap-2">
                       <dt className="font-semibold text-gray-900">所在地</dt>
                       <dd className="sm:col-span-2 text-gray-700">
-                        〒101-0032<br />
-                        東京都千代田区岩本町2-8-2 都ビジネスビル9階
+                        〒150-0043<br />
+                        東京都渋谷区道玄坂2-10-12 新大宗ビル3号館<br />
+                        Dogenzaka 2-10-12, Shibuya-ku, Tokyo
                       </dd>
                     </div>
                     <div className="grid sm:grid-cols-3 gap-2">
                       <dt className="font-semibold text-gray-900">設立</dt>
-                      <dd className="sm:col-span-2 text-gray-700">2012年10月</dd>
+                      <dd className="sm:col-span-2 text-gray-700">2015年4月</dd>
                     </div>
                     <div className="grid sm:grid-cols-3 gap-2">
                       <dt className="font-semibold text-gray-900">業種</dt>
-                      <dd className="sm:col-span-2 text-gray-700">デジタルマーケティング／広告戦略・運用／データ分析</dd>
+                      <dd className="sm:col-span-2 text-gray-700">AI技術を活用した情報提供サービス</dd>
                     </div>
                   </dl>
                 </div>
@@ -71,12 +72,16 @@ export default function SpecifiedCommercialTransactionAct() {
                   <h2 className="text-xl font-bold text-gray-900 mb-4">連絡先</h2>
                   <dl className="space-y-3">
                     <div className="grid sm:grid-cols-3 gap-2">
+                      <dt className="font-semibold text-gray-900">電話</dt>
+                      <dd className="sm:col-span-2 text-gray-700">+81 03-5456-7890</dd>
+                    </div>
+                    <div className="grid sm:grid-cols-3 gap-2">
                       <dt className="font-semibold text-gray-900">メールアドレス</dt>
-                      <dd className="sm:col-span-2 text-blue-600">support@stockofficial.com</dd>
+                      <dd className="sm:col-span-2 text-blue-600">wusegut647@gmail.com</dd>
                     </div>
                     <div className="grid sm:grid-cols-3 gap-2">
                       <dt className="font-semibold text-gray-900">受付時間</dt>
-                      <dd className="sm:col-span-2 text-gray-700">24時間受付（返信は営業日内）</dd>
+                      <dd className="sm:col-span-2 text-gray-700">平日 9:00-18:00（土日祝日を除く）</dd>
                     </div>
                   </dl>
                 </div>
@@ -240,9 +245,10 @@ export default function SpecifiedCommercialTransactionAct() {
                 <div className="flex items-start gap-3 mb-4">
                   <Mail className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-gray-900 mb-1">メール</p>
-                    <p className="text-blue-600">support@stockofficial.com</p>
-                    <p className="text-sm text-gray-600 mt-1">24時間受付（返信は営業日内）</p>
+                    <p className="font-semibold text-gray-900 mb-1">連絡先</p>
+                    <p className="text-gray-700">電話: +81 03-5456-7890</p>
+                    <p className="text-blue-600">wusegut647@gmail.com</p>
+                    <p className="text-sm text-gray-600 mt-1">平日 9:00-18:00（土日祝日を除く）</p>
                   </div>
                 </div>
                 <Link
