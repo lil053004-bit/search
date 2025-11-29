@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50/30 via-rose-50/20 to-emerald-50/30">
+    <div className="bg-gradient-to-br from-amber-50/30 via-rose-50/20 to-emerald-50/30">
       <div className="max-w-4xl mx-auto px-4 py-8">
         <Link
           to="/"

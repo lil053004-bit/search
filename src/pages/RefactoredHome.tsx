@@ -495,7 +495,7 @@ export default function RefactoredHome() {
   };
 
   return (
-    <div className="min-h-screen relative flex flex-col">
+    <div className="relative flex flex-col">
       <SoftBackground />
 
       <div className="relative z-10 flex flex-col">

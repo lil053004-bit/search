@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function CompanyInfo() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-100 via-slate-50 to-blue-50">
+    <div className="bg-gradient-to-br from-slate-100 via-slate-50 to-blue-50">
       <div className="max-w-4xl mx-auto px-4 py-8">
         <Link
           to="/"
