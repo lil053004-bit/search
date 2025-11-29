@@ -21,16 +21,26 @@ import { userTracking } from '../lib/userTracking';
 import { trackConversion, trackDiagnosisButtonClick, trackConversionButtonClick } from '../lib/googleTracking';
 
 const diagnosisRecords = [
-  { time: '2分前', stock: 'トヨタ自動車', icon: '👨' },
-  { time: '5分前', stock: 'ソニーグループ', icon: '👩' },
-  { time: '8分前', stock: '任天堂', icon: '👨' },
-  { time: '12分前', stock: 'ソフトバンクグループ', icon: '👩' },
-  { time: '15分前', stock: 'キーエンス', icon: '👨' },
-  { time: '18分前', stock: '三菱UFJ', icon: '👩' },
-  { time: '22分前', stock: 'ファーストリテイリング', icon: '👨' },
-  { time: '25分前', stock: '東京エレクトロン', icon: '👩' },
-  { time: '28分前', stock: 'リクルート', icon: '👨' },
-  { time: '32分前', stock: 'KDDI', icon: '👩' },
+  { time: '1分前', stock: 'トヨタ自動車 (7203)', icon: '👨' },
+  { time: '3分前', stock: 'ソニーグループ (6758)', icon: '👩' },
+  { time: '5分前', stock: '任天堂 (7974)', icon: '👨' },
+  { time: '7分前', stock: 'ソフトバンクグループ (9984)', icon: '👩' },
+  { time: '10分前', stock: 'キーエンス (6861)', icon: '👨' },
+  { time: '12分前', stock: '三菱UFJフィナンシャル (8306)', icon: '👩' },
+  { time: '15分前', stock: 'ファーストリテイリング (9983)', icon: '👨' },
+  { time: '18分前', stock: '東京エレクトロン (8035)', icon: '👩' },
+  { time: '20分前', stock: 'リクルートホールディングス (6098)', icon: '👨' },
+  { time: '23分前', stock: 'KDDI (9433)', icon: '👩' },
+  { time: '25分前', stock: '信越化学工業 (4063)', icon: '👨' },
+  { time: '28分前', stock: '第一三共 (4568)', icon: '👩' },
+  { time: '30分前', stock: '三菱商事 (8058)', icon: '👨' },
+  { time: '33分前', stock: 'ダイキン工業 (6367)', icon: '👩' },
+  { time: '35分前', stock: '村田製作所 (6981)', icon: '👨' },
+  { time: '38分前', stock: 'オリエンタルランド (4661)', icon: '👩' },
+  { time: '40分前', stock: '日本電信電話 (9432)', icon: '👨' },
+  { time: '43分前', stock: 'エムスリー (2413)', icon: '👩' },
+  { time: '45分前', stock: 'ダイキン工業 (6367)', icon: '👨' },
+  { time: '48分前', stock: '日立製作所 (6501)', icon: '👩' },
 ];
 
 export default function RefactoredHome() {
