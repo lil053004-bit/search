@@ -36,18 +36,18 @@ export default function SpecifiedCommercialTransactionAct() {
                   <dl className="space-y-3">
                     <div className="grid sm:grid-cols-3 gap-2">
                       <dt className="font-semibold text-text-primary">会社名</dt>
-                      <dd className="sm:col-span-2 text-text-secondary">株式会社イービット</dd>
+                      <dd className="sm:col-span-2 text-text-secondary">有限会社 藍デザイン工房</dd>
                     </div>
                     <div className="grid sm:grid-cols-3 gap-2">
                       <dt className="font-semibold text-text-primary">会社名（英語）</dt>
-                      <dd className="sm:col-span-2 text-text-secondary">Ebit Co., Ltd.</dd>
+                      <dd className="sm:col-span-2 text-text-secondary">Aidokobo Co., Ltd.</dd>
                     </div>
                     <div className="grid sm:grid-cols-3 gap-2">
                       <dt className="font-semibold text-text-primary">所在地</dt>
                       <dd className="sm:col-span-2 text-text-secondary">
-                        〒150-0043<br />
-                        東京都渋谷区道玄坂2-10-12 新大宗ビル3号館<br />
-                        Dogenzaka 2-10-12, Shibuya-ku, Tokyo
+                        〒150-8136<br />
+                        東京都渋谷区道玄坂二丁目10番5号 新大宗大厦3号館 4B<br />
+                        4B, Building 3, New Daisho Building, 2-10-5 Dogenzaka, Shibuya-ku, Tokyo
                       </dd>
                     </div>
                     <div className="grid sm:grid-cols-3 gap-2">
@@ -73,11 +73,11 @@ export default function SpecifiedCommercialTransactionAct() {
                   <dl className="space-y-3">
                     <div className="grid sm:grid-cols-3 gap-2">
                       <dt className="font-semibold text-text-primary">電話</dt>
-                      <dd className="sm:col-span-2 text-text-secondary">+81 03-5456-7890</dd>
+                      <dd className="sm:col-span-2 text-text-secondary">+81 03-8732-9568</dd>
                     </div>
                     <div className="grid sm:grid-cols-3 gap-2">
                       <dt className="font-semibold text-text-primary">メールアドレス</dt>
-                      <dd className="sm:col-span-2 text-accent-coral">support@stockwl.jp</dd>
+                      <dd className="sm:col-span-2 text-accent-coral">wusegut647@gmail.com</dd>
                     </div>
                     <div className="grid sm:grid-cols-3 gap-2">
                       <dt className="font-semibold text-text-primary">受付時間</dt>

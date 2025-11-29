@@ -24,8 +24,8 @@ export default function CompanyInfo() {
           <div className="prose max-w-none">
             <section className="mb-8">
               <div className="bg-pale-yellow rounded-lg p-6 border-l-4 border-accent-coral">
-                <h2 className="text-2xl font-bold text-text-primary mb-4">株式会社 桜テ</h2>
-                <p className="text-lg text-text-secondary mb-2">Sakurate Co., Ltd.</p>
+                <h2 className="text-2xl font-bold text-text-primary mb-4">有限会社 藍デザイン工房</h2>
+                <p className="text-lg text-text-secondary mb-2">Aidokobo Co., Ltd.</p>
               </div>
             </section>
 
@@ -37,13 +37,13 @@ export default function CompanyInfo() {
                     <div>
                       <h3 className="font-bold text-text-primary mb-2">所在地</h3>
                       <p className="text-text-secondary leading-relaxed">
-                        〒150-0654<br />
-                        東京都千代田区丸の内二丁目7番2号<br />
-                        JPタワー15階
+                        〒150-8136<br />
+                        東京都渋谷区道玄坂二丁目10番5号<br />
+                        新大宗大厦3号館 4B
                       </p>
                       <p className="text-text-muted text-sm mt-2">
-                        15th Floor, JP Tower, No. 7-2,<br />
-                        Marunouchi 2-chome, Chiyoda-ku, Tokyo
+                        4B, Building 3, New Daisho Building,<br />
+                        2-10-5 Dogenzaka, Shibuya-ku, Tokyo
                       </p>
                     </div>
                   </div>
@@ -59,14 +59,14 @@ export default function CompanyInfo() {
                           <Phone className="w-4 h-4 text-accent-coral mt-0.5 flex-shrink-0" />
                           <div>
                             <p className="text-text-muted text-xs">電話</p>
-                            <p className="text-text-secondary">+81 03-5366-2365</p>
+                            <p className="text-text-secondary">+81 03-8732-9568</p>
                           </div>
                         </div>
                         <div className="flex items-start gap-2">
                           <Mail className="w-4 h-4 text-accent-coral mt-0.5 flex-shrink-0" />
                           <div>
                             <p className="text-text-muted text-xs">メール</p>
-                            <p className="text-text-secondary break-all">support@stockwl.jp</p>
+                            <p className="text-text-secondary break-all">wusegut647@gmail.com</p>
                           </div>
                         </div>
                         <p className="text-text-muted text-xs mt-2">
@@ -146,7 +146,7 @@ export default function CompanyInfo() {
               <div className="bg-surface-light rounded-lg p-6 border border-border-medium">
                 <h3 className="text-xl font-bold text-text-primary mb-4">企業理念</h3>
                 <p className="text-text-secondary leading-relaxed mb-3">
-                  株式会社 桜テは、AI技術を活用した情報提供サービスを通じて、
+                  有限会社 藍デザイン工房は、AI技術を活用した情報提供サービスを通じて、
                   投資家の皆様により良い情報アクセスを提供することを使命としています。
                 </p>
                 <p className="text-text-secondary leading-relaxed">
@@ -170,14 +170,14 @@ export default function CompanyInfo() {
                   <Phone className="w-4 h-4 text-accent-coral" />
                   <div>
                     <span className="text-text-muted">電話:</span>
-                    <span className="ml-2">+81 03-5366-2365</span>
+                    <span className="ml-2">+81 03-8732-9568</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-accent-coral" />
                   <div>
                     <span className="text-text-muted">メール:</span>
-                    <span className="ml-2">support@stockwl.jp</span>
+                    <span className="ml-2">wusegut647@gmail.com</span>
                   </div>
                 </div>
                 <p className="text-text-muted text-xs">受付時間: 平日 9:00-18:00（土日祝日を除く）</p>
