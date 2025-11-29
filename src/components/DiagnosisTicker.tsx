@@ -13,16 +13,16 @@ const diagnosisRecords = [
 
 export default function DiagnosisTicker() {
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 overflow-hidden bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-600 py-2 shadow-lg">
+    <div className="fixed top-0 left-0 right-0 z-50 overflow-hidden bg-dark-slate/70 backdrop-blur-md py-2 shadow-lg border-b border-border-dark/50">
       <div className="animate-scroll-left whitespace-nowrap inline-block">
         {[...diagnosisRecords, ...diagnosisRecords, ...diagnosisRecords].map((record, index) => (
           <span key={index} className="inline-flex items-center mx-4 text-white">
-            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/20 mr-2 text-sm">
+            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-accent-yellow/20 border border-accent-yellow/30 mr-2 text-sm">
               {record.icon}
             </span>
-            <span className="text-sm font-medium mr-2 text-yellow-200">{record.time}</span>
-            <span className="text-sm font-bold mr-2">{record.stock}</span>
-            <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full">無料レポート取得</span>
+            <span className="text-sm font-medium mr-2 text-accent-yellow">{record.time}</span>
+            <span className="text-sm font-bold mr-2 text-text-primary">{record.stock}</span>
+            <span className="text-xs bg-accent-orange/20 border border-accent-orange/30 px-2 py-0.5 rounded-full text-accent-orange">無料レポート取得</span>
           </span>
         ))}
       </div>

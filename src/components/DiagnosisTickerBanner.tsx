@@ -12,48 +12,48 @@ export default function DiagnosisTickerBanner({ records }: DiagnosisTickerBanner
   const doubledRecords = [...records, ...records];
 
   return (
-    <div className="w-full bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-50 border-y border-emerald-100 py-3 overflow-hidden">
+    <div className="w-full bg-dark-slate/40 backdrop-blur-sm border-y border-border-dark/50 py-3 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center gap-4 mb-3">
-          <div className="flex items-center gap-2 px-4 py-1.5 bg-white rounded-full shadow-sm border border-emerald-200">
-            <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
-            <span className="text-sm font-semibold text-emerald-700">最近の分析事例</span>
+          <div className="flex items-center gap-2 px-4 py-1.5 bg-surface-dark/60 backdrop-blur-sm rounded-full shadow-sm border border-accent-yellow/30">
+            <div className="w-2 h-2 bg-accent-yellow rounded-full animate-pulse"></div>
+            <span className="text-sm font-semibold text-accent-yellow">最近の分析事例</span>
           </div>
         </div>
 
         <div className="relative">
-          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-emerald-50 to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-emerald-50 to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-dark-slate/40 to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-dark-slate/40 to-transparent z-10 pointer-events-none"></div>
 
           <div className="flex gap-3 animate-scroll">
             {doubledRecords.map((record, index) => (
               <div
                 key={index}
-                className="flex items-center gap-3 bg-white rounded-2xl px-4 py-3 border border-gray-100 shadow-sm whitespace-nowrap flex-shrink-0"
+                className="flex items-center gap-3 bg-surface-dark/60 backdrop-blur-sm rounded-2xl px-4 py-3 border border-border-dark/50 shadow-sm whitespace-nowrap flex-shrink-0"
                 style={{ minWidth: '280px' }}
               >
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center text-lg shadow-sm flex-shrink-0"
                   style={{
                     background: index % 3 === 0
-                      ? 'linear-gradient(135deg, #A7F3D0 0%, #6EE7B7 100%)'
+                      ? 'linear-gradient(135deg, #FCD34D 0%, #F59E0B 100%)'
                       : index % 3 === 1
                       ? 'linear-gradient(135deg, #FDE68A 0%, #FCD34D 100%)'
-                      : 'linear-gradient(135deg, #DDD6FE 0%, #C4B5FD 100%)'
+                      : 'linear-gradient(135deg, #FF6B35 0%, #E5491A 100%)'
                   }}
                 >
                   {record.icon}
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="px-2 py-0.5 bg-gradient-to-r from-sky-100 to-sky-200 text-sky-700 text-xs font-semibold rounded-full">
+                    <span className="px-2 py-0.5 bg-accent-yellow/20 text-accent-yellow text-xs font-semibold rounded-full border border-accent-yellow/30">
                       {record.time}
                     </span>
-                    <span className="px-2 py-0.5 bg-emerald-50 text-emerald-600 text-xs font-semibold rounded-full">
+                    <span className="px-2 py-0.5 bg-accent-orange/20 text-accent-orange text-xs font-semibold rounded-full border border-accent-orange/30">
                       分析完了
                     </span>
                   </div>
-                  <p className="text-sm font-semibold text-gray-800 truncate">{record.stock}</p>
+                  <p className="text-sm font-semibold text-text-primary truncate">{record.stock}</p>
                 </div>
               </div>
             ))}
