@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import SoftBackground from '../components/SoftBackground';
 import SoftHeader from '../components/SoftHeader';
 import SoftStockDisplay from '../components/SoftStockDisplay';
-import SoftActivityFeed from '../components/SoftActivityFeed';
+import DiagnosisTickerBanner from '../components/DiagnosisTickerBanner';
 import SoftDivider from '../components/SoftDivider';
 import SoftFormCard from '../components/SoftFormCard';
 import SoftStockInput from '../components/SoftStockInput';
@@ -514,7 +514,7 @@ export default function RefactoredHome() {
                 </p>
               </div>
 
-              <SoftActivityFeed records={diagnosisRecords} />
+              <DiagnosisTickerBanner records={diagnosisRecords} />
 
               <SoftDivider />
 
