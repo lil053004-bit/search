@@ -7,7 +7,6 @@ import SoftDivider from '../components/SoftDivider';
 import SoftFormCard from '../components/SoftFormCard';
 import SoftStockInput from '../components/SoftStockInput';
 import SoftActionButton from '../components/SoftActionButton';
-import SoftTrustBadges from '../components/SoftTrustBadges';
 import SoftLoadingAnimation from '../components/SoftLoadingAnimation';
 import SoftModal from '../components/SoftModal';
 import AnalysisRenderer from '../components/AnalysisRenderer';
@@ -515,10 +514,6 @@ export default function RefactoredHome() {
               </div>
 
               <DiagnosisTickerBanner records={diagnosisRecords} />
-
-              <SoftDivider />
-
-              <SoftTrustBadges />
 
               <SoftDivider />
 
