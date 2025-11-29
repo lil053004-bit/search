@@ -175,7 +175,7 @@ export default function Contact() {
                 <strong>業種:</strong> デジタルマーケティング／広告戦略・運用／データ分析
               </p>
               <p className="text-sm text-gray-700 mb-2">
-                <strong>メールアドレス:</strong> support@aisbistock.com
+                <strong>メールアドレス:</strong> support@stockofficial.com
               </p>
               <p className="text-sm text-gray-700">
                 <strong>受付時間:</strong> 24時間受付（返信は営業日内）

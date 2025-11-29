@@ -138,7 +138,7 @@ export default function Footer() {
                 </li>
                 <li className="flex items-center gap-1 text-gray-700">
                   <Mail className="w-3 h-3" />
-                  <span>support@aisbistock.com</span>
+                  <span>support@stockofficial.com</span>
                 </li>
                 <li className="text-gray-600 text-xs">
                   受付時間: 24時間受付（返信は営業日内）

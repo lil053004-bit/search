@@ -149,7 +149,7 @@ export default function Privacy() {
                 設立: 2012年10月
               </p>
               <p className="text-sm text-gray-700 mb-2">
-                メール: support@aisbistock.com
+                メール: support@stockofficial.com
               </p>
               <p className="text-sm text-gray-700">
                 受付時間: 24時間受付（返信は営業日内）
