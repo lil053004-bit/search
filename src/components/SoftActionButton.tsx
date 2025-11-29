@@ -22,11 +22,11 @@ export default function SoftActionButton({
       className="w-full h-14 px-8 rounded-full font-semibold text-white text-base disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center space-x-2 relative overflow-hidden group"
       style={{
         background: disabled || loading
-          ? 'linear-gradient(135deg, #E5E7EB 0%, #D1D5DB 100%)'
-          : 'linear-gradient(135deg, #FDA4AF 0%, #FB7185 100%)',
+          ? 'linear-gradient(135deg, #334155 0%, #475569 100%)'
+          : 'linear-gradient(135deg, #FF6B35 0%, #E5491A 100%)',
         boxShadow: disabled || loading
           ? 'none'
-          : '0 4px 16px rgba(253, 164, 175, 0.4)',
+          : '0 4px 16px rgba(255, 107, 53, 0.4)',
       }}
     >
       {loading ? (
