@@ -15,9 +15,9 @@ export default function DiagnosisTickerBanner({ records }: DiagnosisTickerBanner
     <div className="w-full bg-dark-slate/40 backdrop-blur-sm border-y border-border-dark/50 py-3 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center gap-4 mb-3">
-          <div className="flex items-center gap-2 px-4 py-1.5 bg-surface-dark/60 backdrop-blur-sm rounded-full shadow-sm border border-accent-yellow/30">
-            <div className="w-2 h-2 bg-accent-yellow rounded-full animate-pulse"></div>
-            <span className="text-sm font-semibold text-accent-yellow">最近の分析事例</span>
+          <div className="flex items-center gap-2 px-4 py-1.5 bg-surface-dark/60 backdrop-blur-sm rounded-full shadow-sm border border-accent-coral/30">
+            <div className="w-2 h-2 bg-accent-coral rounded-full animate-pulse"></div>
+            <span className="text-sm font-semibold text-accent-coral">最近の分析事例</span>
           </div>
         </div>
 
@@ -36,20 +36,20 @@ export default function DiagnosisTickerBanner({ records }: DiagnosisTickerBanner
                   className="w-10 h-10 rounded-full flex items-center justify-center text-lg shadow-sm flex-shrink-0"
                   style={{
                     background: index % 3 === 0
-                      ? 'linear-gradient(135deg, #FCD34D 0%, #F59E0B 100%)'
+                      ? 'linear-gradient(135deg, #FF6F61 0%, #E8554E 100%)'
                       : index % 3 === 1
-                      ? 'linear-gradient(135deg, #FDE68A 0%, #FCD34D 100%)'
-                      : 'linear-gradient(135deg, #FF6B35 0%, #E5491A 100%)'
+                      ? 'linear-gradient(135deg, #FF9580 0%, #FF6F61 100%)'
+                      : 'linear-gradient(135deg, #FFB347 0%, #FF9D1F 100%)'
                   }}
                 >
                   {record.icon}
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="px-2 py-0.5 bg-accent-yellow/20 text-accent-yellow text-xs font-semibold rounded-full border border-accent-yellow/30">
+                    <span className="px-2 py-0.5 bg-accent-coral/20 text-accent-coral text-xs font-semibold rounded-full border border-accent-coral/30">
                       {record.time}
                     </span>
-                    <span className="px-2 py-0.5 bg-accent-orange/20 text-accent-orange text-xs font-semibold rounded-full border border-accent-orange/30">
+                    <span className="px-2 py-0.5 bg-accent-peach/20 text-accent-peach text-xs font-semibold rounded-full border border-accent-peach/30">
                       分析完了
                     </span>
                   </div>

@@ -23,10 +23,10 @@ export default function SoftActionButton({
       style={{
         background: disabled || loading
           ? 'linear-gradient(135deg, #334155 0%, #475569 100%)'
-          : 'linear-gradient(135deg, #FF6B35 0%, #E5491A 100%)',
+          : 'linear-gradient(135deg, #FFB347 0%, #FF9D1F 100%)',
         boxShadow: disabled || loading
           ? 'none'
-          : '0 4px 16px rgba(255, 107, 53, 0.4)',
+          : '0 4px 16px rgba(255, 179, 71, 0.4)',
       }}
     >
       {loading ? (

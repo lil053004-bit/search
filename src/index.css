@@ -34,7 +34,7 @@
 
   * {
     scrollbar-width: thin;
-    scrollbar-color: #FCD34D #1E293B;
+    scrollbar-color: #FF6F61 #1E293B;
   }
 
   *::-webkit-scrollbar {
@@ -47,12 +47,12 @@
   }
 
   *::-webkit-scrollbar-thumb {
-    background: #FCD34D;
+    background: #FF6F61;
     border-radius: 4px;
   }
 
   *::-webkit-scrollbar-thumb:hover {
-    background: #FDE68A;
+    background: #FF9580;
   }
 
   body[data-modal-open] header,
@@ -92,10 +92,10 @@
 
   @keyframes glow-pulse {
     0%, 100% {
-      box-shadow: 0 0 20px rgba(252, 211, 77, 0.5);
+      box-shadow: 0 0 20px rgba(255, 111, 97, 0.5);
     }
     50% {
-      box-shadow: 0 0 40px rgba(252, 211, 77, 0.8), 0 0 60px rgba(252, 211, 77, 0.4);
+      box-shadow: 0 0 40px rgba(255, 111, 97, 0.8), 0 0 60px rgba(255, 111, 97, 0.4);
     }
   }
 

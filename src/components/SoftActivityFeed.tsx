@@ -51,7 +51,7 @@ export default function SoftActivityFeed({ records }: SoftActivityFeedProps) {
                       background: index % 3 === 0
                         ? 'linear-gradient(135deg, #A7F3D0 0%, #6EE7B7 100%)'
                         : index % 3 === 1
-                        ? 'linear-gradient(135deg, #FDE68A 0%, #FCD34D 100%)'
+                        ? 'linear-gradient(135deg, #FF9580 0%, #FF6F61 100%)'
                         : 'linear-gradient(135deg, #DDD6FE 0%, #C4B5FD 100%)'
                     }}
                   >

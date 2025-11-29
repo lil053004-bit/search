@@ -7,7 +7,7 @@ export default function Contact() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-accent-yellow hover:text-accent-yellow-light mb-6 transition-colors"
+          className="inline-flex items-center gap-2 text-accent-coral hover:text-accent-coral-light mb-6 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           トップページに戻る
@@ -16,7 +16,7 @@ export default function Contact() {
         <div className="bg-surface-dark rounded-3xl shadow-dark-glow border border-border-dark p-8">
           <div className="flex items-center gap-3 mb-6">
             <div className="bg-dark-blue p-3 rounded-2xl">
-              <Mail className="w-6 h-6 text-accent-orange" />
+              <Mail className="w-6 h-6 text-accent-peach" />
             </div>
             <h1 className="text-3xl font-bold text-text-primary">お問い合わせ</h1>
           </div>
@@ -30,7 +30,7 @@ export default function Contact() {
             <section className="mb-8">
               <h2 className="text-xl font-semibold text-text-primary mb-4">受付時間</h2>
               <div className="bg-dark-blue rounded-2xl p-4 flex items-start gap-3 border border-border-dark">
-                <Clock className="w-5 h-5 text-accent-yellow mt-1 flex-shrink-0" />
+                <Clock className="w-5 h-5 text-accent-coral mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-semibold text-text-primary mb-1">平日 9:00-18:00</p>
                   <p className="text-sm text-text-muted">
@@ -47,41 +47,41 @@ export default function Contact() {
               <form className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold text-text-secondary mb-2">
-                    お名前 <span className="text-accent-orange">*</span>
+                    お名前 <span className="text-accent-peach">*</span>
                   </label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     required
-                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-yellow/20 focus:border-accent-yellow transition-all text-text-primary"
+                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-coral/20 focus:border-accent-coral transition-all text-text-primary"
                     placeholder="山田 太郎"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-semibold text-text-secondary mb-2">
-                    メールアドレス <span className="text-accent-orange">*</span>
+                    メールアドレス <span className="text-accent-peach">*</span>
                   </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-yellow/20 focus:border-accent-yellow transition-all text-text-primary"
+                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-coral/20 focus:border-accent-coral transition-all text-text-primary"
                     placeholder="example@email.com"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="subject" className="block text-sm font-semibold text-text-secondary mb-2">
-                    件名 <span className="text-accent-orange">*</span>
+                    件名 <span className="text-accent-peach">*</span>
                   </label>
                   <select
                     id="subject"
                     name="subject"
                     required
-                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-yellow/20 focus:border-accent-yellow transition-all text-text-primary"
+                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-coral/20 focus:border-accent-coral transition-all text-text-primary"
                   >
                     <option value="">選択してください</option>
                     <option value="service">サービス内容について</option>
@@ -93,14 +93,14 @@ export default function Contact() {
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-semibold text-text-secondary mb-2">
-                    お問い合わせ内容 <span className="text-accent-orange">*</span>
+                    お問い合わせ内容 <span className="text-accent-peach">*</span>
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     required
                     rows={8}
-                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-yellow/20 focus:border-accent-yellow transition-all resize-none text-text-primary"
+                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-coral/20 focus:border-accent-coral transition-all resize-none text-text-primary"
                     placeholder="お問い合わせ内容を詳しくご記入ください"
                   />
                 </div>
@@ -110,18 +110,18 @@ export default function Contact() {
                     <input
                       type="checkbox"
                       required
-                      className="mt-1 w-4 h-4 text-accent-yellow border-border-dark rounded focus:ring-accent-yellow"
+                      className="mt-1 w-4 h-4 text-accent-coral border-border-dark rounded focus:ring-accent-coral"
                     />
                     <span className="text-sm text-text-secondary">
-                      <Link to="/privacy" className="text-accent-yellow hover:underline">プライバシーポリシー</Link>
-                      に同意します <span className="text-accent-orange">*</span>
+                      <Link to="/privacy" className="text-accent-coral hover:underline">プライバシーポリシー</Link>
+                      に同意します <span className="text-accent-peach">*</span>
                     </span>
                   </label>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-orange-gradient text-white font-semibold py-3 px-6 rounded-full transition-all shadow-orange-glow hover:scale-[1.02] active:scale-[0.98]"
+                  className="w-full bg-peach-gradient text-white font-semibold py-3 px-6 rounded-full transition-all shadow-peach-glow hover:scale-[1.02] active:scale-[0.98]"
                 >
                   送信する
                 </button>
@@ -137,8 +137,8 @@ export default function Contact() {
 
             <section className="mb-8">
               <h2 className="text-xl font-semibold text-text-primary mb-4">投資に関するご相談について</h2>
-              <div className="bg-dark-blue border-l-4 border-accent-orange p-4 rounded-r-2xl">
-                <p className="text-accent-orange font-semibold mb-2">重要なお知らせ</p>
+              <div className="bg-dark-blue border-l-4 border-accent-peach p-4 rounded-r-2xl">
+                <p className="text-accent-peach font-semibold mb-2">重要なお知らせ</p>
                 <p className="text-text-secondary leading-relaxed">
                   当サービスは金融商品取引業者ではないため、個別の投資助言を行うことはできません。
                   投資に関する具体的なご相談は、証券会社等の金融商品取引業者にお問い合わせください。
@@ -148,7 +148,7 @@ export default function Contact() {
 
             <div className="bg-surface-light rounded-2xl p-6 border border-border-dark">
               <h3 className="font-semibold text-text-primary mb-3 flex items-center gap-2">
-                <Mail className="w-5 h-5 text-accent-yellow" />
+                <Mail className="w-5 h-5 text-accent-coral" />
                 運営会社情報
               </h3>
               <div className="space-y-2 text-sm text-text-secondary">

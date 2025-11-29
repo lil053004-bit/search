@@ -7,7 +7,7 @@ export default function Terms() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-accent-yellow hover:text-accent-yellow-light mb-6 transition-colors"
+          className="inline-flex items-center gap-2 text-accent-coral hover:text-accent-coral-light mb-6 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           トップページに戻る
@@ -16,7 +16,7 @@ export default function Terms() {
         <div className="bg-surface-dark rounded-xl shadow-dark-glow border border-border-dark p-8">
           <div className="flex items-center gap-3 mb-6">
             <div className="bg-dark-blue p-3 rounded-lg">
-              <FileText className="w-6 h-6 text-accent-yellow" />
+              <FileText className="w-6 h-6 text-accent-coral" />
             </div>
             <h1 className="text-3xl font-bold text-text-primary">利用規約</h1>
           </div>
@@ -52,8 +52,8 @@ export default function Terms() {
 
             <section className="mb-8">
               <h2 className="text-xl font-bold text-text-primary mb-4">第3条（利用上の注意事項）</h2>
-              <div className="bg-dark-blue border-l-4 border-accent-orange p-4 mb-4">
-                <p className="text-accent-orange font-semibold mb-2">重要な注意事項</p>
+              <div className="bg-dark-blue border-l-4 border-accent-peach p-4 mb-4">
+                <p className="text-accent-peach font-semibold mb-2">重要な注意事項</p>
                 <p className="text-text-secondary leading-relaxed">
                   当サービスは情報提供のみを目的としており、投資助言や投資勧誘を行うものではありません。
                   当サービスが提供する情報は、投資判断の参考情報として提供されるものであり、投資成果を保証するものではありません。

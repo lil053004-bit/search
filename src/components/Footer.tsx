@@ -10,20 +10,20 @@ export default function Footer() {
         <div className="hidden md:block bg-surface-dark border border-border-dark rounded-3xl p-8 mb-12">
           <div className="flex items-start gap-4">
             <div className="bg-dark-blue p-3 rounded-2xl flex-shrink-0">
-              <Shield className="w-6 h-6 text-accent-orange" />
+              <Shield className="w-6 h-6 text-accent-peach" />
             </div>
             <div className="flex-1">
               <h3 className="text-xl font-semibold text-text-primary mb-4 flex items-center gap-2">
-                <Scale className="w-5 h-5 text-accent-orange" />
+                <Scale className="w-5 h-5 text-accent-peach" />
                 金融商品取引法に基づく重要事項
               </h3>
 
               <div className="space-y-3 text-sm leading-relaxed text-text-secondary">
-                <div className="bg-dark-blue rounded-2xl p-4 border-l-4 border-accent-yellow">
+                <div className="bg-dark-blue rounded-2xl p-4 border-l-4 border-accent-coral">
                   <p className="font-semibold text-text-primary mb-2">【サービスの性質】</p>
                   <p>
                     本サービスは、AI技術を活用した株式情報の提供および分析ツールです。
-                    <strong className="text-accent-orange">投資助言業務、投資一任業務、金融商品仲介業務には該当せず、特定の金融商品の売買を推奨・勧誘するものではありません。</strong>
+                    <strong className="text-accent-peach">投資助言業務、投資一任業務、金融商品仲介業務には該当せず、特定の金融商品の売買を推奨・勧誘するものではありません。</strong>
                   </p>
                 </div>
 
@@ -31,13 +31,13 @@ export default function Footer() {
                   <p className="font-semibold text-text-primary mb-2">【投資リスクに関する警告】</p>
                   <p>
                     株式投資には価格変動リスク、信用リスク、流動性リスク等が伴い、
-                    <strong className="text-accent-orange">投資元本を割り込む可能性があります。</strong>
+                    <strong className="text-accent-peach">投資元本を割り込む可能性があります。</strong>
                     過去の運用実績は将来の運用成果を保証するものではありません。
                     市場環境の変化により、予想外の損失が発生する可能性があります。
                   </p>
                 </div>
 
-                <div className="bg-dark-blue rounded-2xl p-4 border-l-4 border-accent-yellow">
+                <div className="bg-dark-blue rounded-2xl p-4 border-l-4 border-accent-coral">
                   <p className="font-semibold text-text-primary mb-2">【情報の正確性について】</p>
                   <p>
                     提供される情報は、信頼できると判断した情報源から取得していますが、
@@ -46,10 +46,10 @@ export default function Footer() {
                   </p>
                 </div>
 
-                <div className="bg-dark-blue rounded-2xl p-4 border-l-4 border-accent-orange">
+                <div className="bg-dark-blue rounded-2xl p-4 border-l-4 border-accent-peach">
                   <p className="font-semibold text-text-primary mb-2">【投資判断の責任】</p>
                   <p>
-                    <strong className="text-accent-orange">最終的な投資判断は、利用者ご自身の責任において行ってください。</strong>
+                    <strong className="text-accent-peach">最終的な投資判断は、利用者ご自身の責任において行ってください。</strong>
                     本サービスの利用により生じたいかなる損害についても、当社は一切の責任を負いません。
                     投資を行う際は、証券会社等の金融商品取引業者にご相談ください。
                   </p>
@@ -67,8 +67,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="md:hidden bg-surface-dark border border-accent-orange rounded-2xl p-4 text-center mb-8">
-          <p className="text-sm text-accent-orange font-semibold mb-1">⚠️ 重要なお知らせ</p>
+        <div className="md:hidden bg-surface-dark border border-accent-peach rounded-2xl p-4 text-center mb-8">
+          <p className="text-sm text-accent-peach font-semibold mb-1">⚠️ 重要なお知らせ</p>
           <p className="text-xs text-text-secondary leading-relaxed">
             当サービスは情報提供のみを目的としており、投資助言や投資勧誘を行うものではありません。投資判断は必ずご自身の責任で行ってください。
           </p>
@@ -78,43 +78,43 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-8 mb-8">
             <div>
               <h4 className="font-semibold text-text-primary mb-4 flex items-center gap-2">
-                <FileText className="w-4 h-4 text-accent-yellow" />
+                <FileText className="w-4 h-4 text-accent-coral" />
                 法的文書
               </h4>
               <ul className="space-y-3 text-sm">
                 <li>
                   <Link
                     to="/company"
-                    className="text-text-secondary hover:text-accent-yellow transition-colors flex items-center gap-2 group"
+                    className="text-text-secondary hover:text-accent-coral transition-colors flex items-center gap-2 group"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent-yellow/50 group-hover:bg-accent-yellow transition-colors"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent-coral/50 group-hover:bg-accent-coral transition-colors"></span>
                     会社概要
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/terms"
-                    className="text-text-secondary hover:text-accent-yellow transition-colors flex items-center gap-2 group"
+                    className="text-text-secondary hover:text-accent-coral transition-colors flex items-center gap-2 group"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent-yellow/50 group-hover:bg-accent-yellow transition-colors"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent-coral/50 group-hover:bg-accent-coral transition-colors"></span>
                     利用規約
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/privacy"
-                    className="text-text-secondary hover:text-accent-yellow transition-colors flex items-center gap-2 group"
+                    className="text-text-secondary hover:text-accent-coral transition-colors flex items-center gap-2 group"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent-yellow/50 group-hover:bg-accent-yellow transition-colors"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent-coral/50 group-hover:bg-accent-coral transition-colors"></span>
                     プライバシーポリシー
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/specified-commercial-transaction-act"
-                    className="text-text-secondary hover:text-accent-yellow transition-colors flex items-center gap-2 group"
+                    className="text-text-secondary hover:text-accent-coral transition-colors flex items-center gap-2 group"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent-yellow/50 group-hover:bg-accent-yellow transition-colors"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent-coral/50 group-hover:bg-accent-coral transition-colors"></span>
                     特定商取引法表記
                   </Link>
                 </li>
@@ -123,16 +123,16 @@ export default function Footer() {
 
             <div>
               <h4 className="font-semibold text-text-primary mb-4 flex items-center gap-2">
-                <Mail className="w-4 h-4 text-accent-orange" />
+                <Mail className="w-4 h-4 text-accent-peach" />
                 お問い合わせ
               </h4>
               <ul className="space-y-3 text-sm">
                 <li>
                   <Link
                     to="/contact"
-                    className="text-text-secondary hover:text-accent-orange transition-colors flex items-center gap-2 group"
+                    className="text-text-secondary hover:text-accent-peach transition-colors flex items-center gap-2 group"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent-orange/50 group-hover:bg-accent-orange transition-colors"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent-peach/50 group-hover:bg-accent-peach transition-colors"></span>
                     お問い合わせフォーム
                   </Link>
                 </li>

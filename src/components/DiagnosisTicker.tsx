@@ -17,12 +17,12 @@ export default function DiagnosisTicker() {
       <div className="animate-scroll-left whitespace-nowrap inline-block">
         {[...diagnosisRecords, ...diagnosisRecords, ...diagnosisRecords].map((record, index) => (
           <span key={index} className="inline-flex items-center mx-4 text-white">
-            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-accent-yellow/20 border border-accent-yellow/30 mr-2 text-sm">
+            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-accent-coral/20 border border-accent-coral/30 mr-2 text-sm">
               {record.icon}
             </span>
-            <span className="text-sm font-medium mr-2 text-accent-yellow">{record.time}</span>
+            <span className="text-sm font-medium mr-2 text-accent-coral">{record.time}</span>
             <span className="text-sm font-bold mr-2 text-text-primary">{record.stock}</span>
-            <span className="text-xs bg-accent-orange/20 border border-accent-orange/30 px-2 py-0.5 rounded-full text-accent-orange">無料レポート取得</span>
+            <span className="text-xs bg-accent-peach/20 border border-accent-peach/30 px-2 py-0.5 rounded-full text-accent-peach">無料レポート取得</span>
           </span>
         ))}
       </div>
