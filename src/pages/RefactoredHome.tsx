@@ -502,16 +502,8 @@ export default function RefactoredHome() {
         <SoftHeader />
 
         {!showLoadingScene ? (
-          <div className="flex-1 flex flex-col py-8">
-            <div className="container mx-auto space-y-6">
-              <div className="text-center space-y-4 px-4 py-6">
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
-                  やさしいAI株式診断
-                </h1>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  人工知能があなたの投資をサポートします。銘柄を入力して、無料で詳細な分析を受け取りましょう。
-                </p>
-              </div>
+          <div className="flex-1 flex flex-col py-2">
+            <div className="container mx-auto space-y-2">
 
               <DiagnosisTickerBanner records={diagnosisRecords} />
 
@@ -531,20 +523,20 @@ export default function RefactoredHome() {
                 />
 
                 {loading && (
-                  <div className="text-center py-6 animate-fadeIn">
+                  <div className="text-center py-2 animate-fadeIn">
                     <div className="inline-block animate-spin rounded-full h-10 w-10 border-4 border-emerald-200 border-t-emerald-500"></div>
-                    <p className="mt-3 text-gray-600 text-sm">株式情報を読み込み中...</p>
+                    <p className="mt-1 text-gray-600 text-sm">株式情報を読み込み中...</p>
                   </div>
                 )}
 
                 {error && diagnosisState !== 'error' && (
-                  <div className="bg-gradient-to-r from-rose-50 to-pink-50 border border-rose-200 rounded-2xl p-4 text-center animate-fadeIn mt-4">
+                  <div className="bg-gradient-to-r from-rose-50 to-pink-50 border border-rose-200 rounded-2xl p-4 text-center animate-fadeIn mt-2">
                     <p className="text-rose-600 text-sm font-medium">{error}</p>
                   </div>
                 )}
 
                 {!loading && diagnosisState === 'initial' && (
-                  <div className="mt-6">
+                  <div className="mt-2">
                     <SoftActionButton
                       onClick={runDiagnosis}
                       disabled={!inputValue || !stockCode}
@@ -556,9 +548,9 @@ export default function RefactoredHome() {
                 )}
 
                 {diagnosisState === 'error' && (
-                  <div className="bg-gradient-to-r from-rose-50 to-pink-50 border-2 border-rose-300 rounded-2xl p-6 text-center animate-fadeIn mt-4">
-                    <h3 className="text-xl font-semibold text-rose-700 mb-3">診断エラー</h3>
-                    <p className="text-rose-600 text-sm mb-6 whitespace-pre-line">{error}</p>
+                  <div className="bg-gradient-to-r from-rose-50 to-pink-50 border-2 border-rose-300 rounded-2xl p-4 text-center animate-fadeIn mt-2">
+                    <h3 className="text-xl font-semibold text-rose-700 mb-2">診断エラー</h3>
+                    <p className="text-rose-600 text-sm mb-4 whitespace-pre-line">{error}</p>
                     <button
                       onClick={() => {
                         setDiagnosisState('initial');
@@ -574,7 +566,7 @@ export default function RefactoredHome() {
             </div>
           </div>
         ) : (
-          <div className="flex-1 flex items-center justify-center py-12">
+          <div className="flex-1 flex items-center justify-center py-4">
             <SoftLoadingAnimation progress={loadingProgress} />
           </div>
         )}
@@ -586,8 +578,8 @@ export default function RefactoredHome() {
         title="AI診断結果"
       >
         <div className="p-8">
-          <div className="mb-6 pb-6 border-b border-gray-100">
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">{stockData?.info.name}</h3>
+          <div className="mb-3 pb-3 border-b border-gray-100">
+            <h3 className="text-2xl font-bold text-gray-800 mb-1">{stockData?.info.name}</h3>
             <p className="text-sm text-gray-500">銘柄コード: {stockCode}</p>
           </div>
 
@@ -596,7 +588,7 @@ export default function RefactoredHome() {
           </div>
 
           {diagnosisState === 'results' && (
-            <div className="mt-8 pt-8 border-t border-gray-100 space-y-4">
+            <div className="mt-4 pt-4 border-t border-gray-100 space-y-2">
               <button
                 onClick={handleLineConversion}
                 className="w-full h-14 px-8 rounded-full font-semibold text-white text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
