@@ -142,7 +142,7 @@ export default function Footer() {
 
           <div className="border-t border-border-dark pt-6 text-center">
             <p className="text-sm text-text-primary mb-2 font-medium">
-              &copy; {currentYear} 株式会社イービット. All rights reserved.
+              &copy; {currentYear} 株式会社 桜テ. All rights reserved.
             </p>
             <p className="text-xs text-text-muted leading-relaxed max-w-3xl mx-auto">
               当サイトで提供される情報は投資勧誘を目的としたものではありません。

@@ -16,7 +16,7 @@ export default function SoftFormCard({ children }: SoftFormCardProps) {
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-xl font-semibold text-text-primary">
-                銘柄診断フォーム
+                銘柄情報検索フォーム
               </h2>
               <p className="text-sm text-text-secondary mt-1">銘柄コードまたは銘柄名を入力してください</p>
             </div>

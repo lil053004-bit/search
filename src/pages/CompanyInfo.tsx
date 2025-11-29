@@ -24,8 +24,8 @@ export default function CompanyInfo() {
           <div className="prose max-w-none">
             <section className="mb-8">
               <div className="bg-dark-blue rounded-lg p-6 border-l-4 border-accent-yellow">
-                <h2 className="text-2xl font-bold text-text-primary mb-4">株式会社イービット</h2>
-                <p className="text-lg text-text-secondary mb-2">Ebit Co., Ltd.</p>
+                <h2 className="text-2xl font-bold text-text-primary mb-4">株式会社 桜テ</h2>
+                <p className="text-lg text-text-secondary mb-2">Sakurate Co., Ltd.</p>
               </div>
             </section>
 
@@ -37,12 +37,13 @@ export default function CompanyInfo() {
                     <div>
                       <h3 className="font-bold text-text-primary mb-2">所在地</h3>
                       <p className="text-text-secondary leading-relaxed">
-                        〒150-0043<br />
-                        東京都渋谷区道玄坂2-10-12<br />
-                        新大宗ビル3号館
+                        〒150-0654<br />
+                        東京都千代田区丸の内二丁目7番2号<br />
+                        JPタワー15階
                       </p>
                       <p className="text-text-muted text-sm mt-2">
-                        Dogenzaka 2-10-12, Shibuya-ku, Tokyo
+                        15th Floor, JP Tower, No. 7-2,<br />
+                        Marunouchi 2-chome, Chiyoda-ku, Tokyo
                       </p>
                     </div>
                   </div>
@@ -58,7 +59,7 @@ export default function CompanyInfo() {
                           <Phone className="w-4 h-4 text-accent-yellow mt-0.5 flex-shrink-0" />
                           <div>
                             <p className="text-text-muted text-xs">電話</p>
-                            <p className="text-text-secondary">+81 03-5456-7890</p>
+                            <p className="text-text-secondary">+81 03-5366-2365</p>
                           </div>
                         </div>
                         <div className="flex items-start gap-2">
@@ -85,7 +86,7 @@ export default function CompanyInfo() {
                   <div>
                     <h3 className="text-xl font-bold text-text-primary mb-3">業種</h3>
                     <p className="text-text-secondary text-lg leading-relaxed">
-                      AI技術を活用した情報提供サービス／デジタルマーケティング支援
+                      AI技術を活用した株式情報提供サービス／デジタルマーケティング支援
                     </p>
                   </div>
                 </div>
@@ -145,7 +146,7 @@ export default function CompanyInfo() {
               <div className="bg-surface-light rounded-lg p-6 border border-border-dark">
                 <h3 className="text-xl font-bold text-text-primary mb-4">企業理念</h3>
                 <p className="text-text-secondary leading-relaxed mb-3">
-                  株式会社イービットは、AI技術を活用した情報提供サービスを通じて、
+                  株式会社 桜テは、AI技術を活用した情報提供サービスを通じて、
                   投資家の皆様により良い情報アクセスを提供することを使命としています。
                 </p>
                 <p className="text-text-secondary leading-relaxed">
@@ -169,7 +170,7 @@ export default function CompanyInfo() {
                   <Phone className="w-4 h-4 text-accent-yellow" />
                   <div>
                     <span className="text-text-muted">電話:</span>
-                    <span className="ml-2">+81 03-5456-7890</span>
+                    <span className="ml-2">+81 03-5366-2365</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">

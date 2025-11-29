@@ -9,8 +9,8 @@ export interface SiteConfig {
 export const getSiteConfig = (): SiteConfig => {
   return {
     domain: import.meta.env.VITE_SITE_DOMAIN || 'http://localhost:5173',
-    name: import.meta.env.VITE_SITE_NAME || 'AI株式診断サービス',
-    description: import.meta.env.VITE_SITE_DESCRIPTION || '完全無料・登録不要・クレジットカード不要のAI株式診断サービス。AIが株式市場を分析し、詳細なレポートを数秒で提供。',
+    name: import.meta.env.VITE_SITE_NAME || 'AI株式情報ツール',
+    description: import.meta.env.VITE_SITE_DESCRIPTION || '完全無料・登録不要のAI株式情報分析ツール。AI技術を活用して株式市場データを可視化、情報提供。※投資助言ではありません。',
     themeColor: '#FCD34D',
     backgroundColor: '#030712'
   };

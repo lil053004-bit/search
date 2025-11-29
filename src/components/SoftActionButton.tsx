@@ -32,7 +32,7 @@ export default function SoftActionButton({
       {loading ? (
         <>
           <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-          <span>診断中...</span>
+          <span>分析中...</span>
         </>
       ) : (
         <>

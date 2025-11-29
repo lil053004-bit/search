@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import SoftBackground from '../components/SoftBackground';
 import SoftHeader from '../components/SoftHeader';
+import DisclaimerBanner from '../components/DisclaimerBanner';
 import DiagnosisTickerBanner from '../components/DiagnosisTickerBanner';
 import SoftDivider from '../components/SoftDivider';
 import SoftFormCard from '../components/SoftFormCard';
@@ -500,6 +501,7 @@ export default function RefactoredHome() {
 
       <div className="relative z-10 flex flex-col">
         <SoftHeader />
+        <DisclaimerBanner />
 
         {!showLoadingScene ? (
           <div className="flex-1 flex flex-col py-2">
@@ -571,7 +573,7 @@ export default function RefactoredHome() {
       <SoftModal
         isOpen={diagnosisState === 'streaming' || diagnosisState === 'results'}
         onClose={closeModal}
-        title="AI分析結果"
+        title="AI分析情報"
       >
         <div className="p-8">
           <div className="mb-3 pb-3 border-b border-gray-100">

@@ -18,20 +18,20 @@ export default function SoftHeader() {
             </div>
             <div>
               <h1 className="text-2xl font-semibold text-text-primary">
-                AI株式診断
+                AI株式情報ツール
               </h1>
-              <p className="text-xs text-text-muted mt-0.5">やさしい人工知能による株式分析</p>
+              <p className="text-xs text-text-muted mt-0.5">株式情報を分かりやすく可視化</p>
             </div>
           </div>
 
           <div className="flex items-center space-x-3">
             <div className="hidden md:flex items-center space-x-2 px-4 py-2 bg-dark-blue rounded-full border border-accent-yellow/30">
               <div className="w-2 h-2 rounded-full bg-accent-yellow"></div>
-              <span className="text-xs font-medium text-accent-yellow">信頼</span>
+              <span className="text-xs font-medium text-accent-yellow">情報提供</span>
             </div>
             <div className="hidden md:flex items-center space-x-2 px-4 py-2 bg-dark-blue rounded-full border border-accent-orange/30">
               <div className="w-2 h-2 rounded-full bg-accent-orange"></div>
-              <span className="text-xs font-medium text-accent-orange">安全</span>
+              <span className="text-xs font-medium text-accent-orange">無料</span>
             </div>
           </div>
         </div>
