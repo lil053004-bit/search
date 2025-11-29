@@ -10,10 +10,11 @@ export default function ModernActionButton({ onClick, disabled = false }: Modern
         <button
           onClick={onClick}
           disabled={disabled}
-          className="w-full text-gray-900 font-bold py-4 px-6 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+          className="w-full text-white font-bold py-4 px-6 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
           style={{
-            backgroundColor: disabled ? '#D1D5DB' : '#FFC93C',
-            height: '56px'
+            background: disabled ? '#A0AEC0' : 'linear-gradient(135deg, #2C5282 0%, #38B2AC 50%, #FFA07A 100%)',
+            height: '56px',
+            boxShadow: disabled ? 'none' : '0 4px 20px rgba(56, 178, 172, 0.4)'
           }}
         >
           <span className="text-lg">診断を開始する</span>

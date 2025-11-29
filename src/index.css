@@ -23,7 +23,9 @@
   }
 
   body {
-    @apply bg-gradient-to-b from-white to-light-blue text-gray-800 min-h-screen;
+    background: linear-gradient(180deg, #0A1929 0%, #1E3A5F 50%, #2C5282 100%);
+    color: #F9FAFB;
+    min-height: 100vh;
     overflow-x: hidden;
     font-family: 'Noto Sans JP', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -32,7 +34,7 @@
 
   * {
     scrollbar-width: thin;
-    scrollbar-color: #3b82f6 #dbeafe;
+    scrollbar-color: #38B2AC #1E3A5F;
   }
 
   *::-webkit-scrollbar {
@@ -41,16 +43,16 @@
   }
 
   *::-webkit-scrollbar-track {
-    background: #dbeafe;
+    background: #1E3A5F;
   }
 
   *::-webkit-scrollbar-thumb {
-    background: #3b82f6;
+    background: #38B2AC;
     border-radius: 4px;
   }
 
   *::-webkit-scrollbar-thumb:hover {
-    background: #1e3a8a;
+    background: #4FD1C5;
   }
 
   body[data-modal-open] header,
@@ -90,10 +92,10 @@
 
   @keyframes glow-pulse {
     0%, 100% {
-      box-shadow: 0 0 20px rgba(6, 199, 85, 0.5);
+      box-shadow: 0 0 20px rgba(56, 178, 172, 0.5);
     }
     50% {
-      box-shadow: 0 0 40px rgba(6, 199, 85, 0.8), 0 0 60px rgba(6, 199, 85, 0.4);
+      box-shadow: 0 0 40px rgba(56, 178, 172, 0.8), 0 0 60px rgba(56, 178, 172, 0.4);
     }
   }
 

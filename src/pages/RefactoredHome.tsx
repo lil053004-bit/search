@@ -495,16 +495,45 @@ export default function RefactoredHome() {
             </div>
 
             <div className="w-[95%] mx-auto mb-4">
-              <div className="overflow-hidden bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-600 py-2 shadow-lg rounded-xl">
-                <div className="animate-scroll-left whitespace-nowrap inline-block">
+              <div
+                className="overflow-hidden py-3 shadow-lg rounded-xl relative"
+                style={{
+                  background: 'linear-gradient(135deg, #2C5282 0%, #38B2AC 50%, #4FD1C5 100%)',
+                }}
+              >
+                <div
+                  className="absolute inset-0 opacity-20"
+                  style={{
+                    background: 'repeating-linear-gradient(90deg, transparent, transparent 10px, rgba(255, 160, 122, 0.1) 10px, rgba(255, 160, 122, 0.1) 20px)',
+                  }}
+                />
+                <div className="animate-scroll-left whitespace-nowrap inline-block relative z-10">
                   {[...diagnosisRecords, ...diagnosisRecords, ...diagnosisRecords].map((record, index) => (
                     <span key={index} className="inline-flex items-center mx-4 text-white">
-                      <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/20 mr-2 text-sm">
-                        {record.icon}
+                      <span
+                        className="inline-flex items-center justify-center w-7 h-7 rounded-full mr-2"
+                        style={{
+                          background: 'linear-gradient(135deg, rgba(79, 209, 197, 0.3), rgba(255, 160, 122, 0.3))',
+                          border: '1px solid rgba(255, 255, 255, 0.3)',
+                        }}
+                      >
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="7" cy="7" r="2" fill="#FFB6A3" opacity="0.8" />
+                          <circle cx="7" cy="7" r="5" stroke="#4FD1C5" strokeWidth="1" opacity="0.6" />
+                        </svg>
                       </span>
-                      <span className="text-sm font-medium mr-2 text-yellow-200">{record.time}</span>
+                      <span
+                        className="text-sm font-medium mr-2"
+                        style={{ color: '#FFE5D4' }}
+                      >{record.time}</span>
                       <span className="text-sm font-bold mr-2">{record.stock}</span>
-                      <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full">無料レポート取得</span>
+                      <span
+                        className="text-xs px-3 py-1 rounded-full font-medium"
+                        style={{
+                          background: 'linear-gradient(135deg, rgba(255, 160, 122, 0.4), rgba(255, 182, 163, 0.3))',
+                          border: '1px solid rgba(255, 255, 255, 0.2)',
+                        }}
+                      >無料レポート取得</span>
                     </span>
                   ))}
                 </div>
