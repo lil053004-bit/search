@@ -1,13 +1,15 @@
 import { useState, useEffect, useRef } from 'react';
-import ModernGradientBackground from '../components/ModernGradientBackground';
-import DiagnosisTicker from '../components/DiagnosisTicker';
-import IllustrationCarousel from '../components/IllustrationCarousel';
-import FormContainer from '../components/FormContainer';
-import ModernStockInput from '../components/ModernStockInput';
-import ModernActionButton from '../components/ModernActionButton';
+import JapanesePatternBackground from '../components/JapanesePatternBackground';
+import JapaneseHeader from '../components/JapaneseHeader';
+import StockBoardDisplay from '../components/StockBoardDisplay';
+import JapaneseNewsBanner from '../components/JapaneseNewsBanner';
+import WavePatternDivider from '../components/WavePatternDivider';
+import JapaneseFormCard from '../components/JapaneseFormCard';
+import JapaneseStockInput from '../components/JapaneseStockInput';
+import JapaneseActionButton from '../components/JapaneseActionButton';
+import SealBadge from '../components/SealBadge';
 import InlineLoadingScene from '../components/InlineLoadingScene';
 import DiagnosisModal from '../components/DiagnosisModal';
-import ApiStatsDisplay from '../components/ApiStatsDisplay';
 import { StockData } from '../types/stock';
 import { DiagnosisState } from '../types/diagnosis';
 import { useUrlParams } from '../hooks/useUrlParams';
@@ -483,66 +485,30 @@ export default function RefactoredHome() {
 
   return (
     <div className="min-h-screen relative flex flex-col">
-      <ModernGradientBackground />
+      <JapanesePatternBackground />
 
-      <div className="relative z-10 flex-1 flex flex-col">
-        <ApiStatsDisplay />
+      <div className="relative z-10 flex flex-col">
+        <JapaneseHeader />
 
         {!showLoadingScene ? (
-          <div className="flex-1 flex flex-col">
-            <div className="flex-[6] flex flex-col items-center justify-center px-4 py-8">
-              <IllustrationCarousel />
-            </div>
+          <div className="flex-1 flex flex-col py-8">
+            <div className="container mx-auto px-4 space-y-8">
+              <StockBoardDisplay />
 
-            <div className="w-[95%] mx-auto mb-4">
-              <div
-                className="overflow-hidden py-3 shadow-lg rounded-xl relative"
-                style={{
-                  background: 'linear-gradient(135deg, #2C5282 0%, #38B2AC 50%, #4FD1C5 100%)',
-                }}
-              >
-                <div
-                  className="absolute inset-0 opacity-20"
-                  style={{
-                    background: 'repeating-linear-gradient(90deg, transparent, transparent 10px, rgba(255, 160, 122, 0.1) 10px, rgba(255, 160, 122, 0.1) 20px)',
-                  }}
-                />
-                <div className="animate-scroll-left whitespace-nowrap inline-block relative z-10">
-                  {[...diagnosisRecords, ...diagnosisRecords, ...diagnosisRecords].map((record, index) => (
-                    <span key={index} className="inline-flex items-center mx-4 text-white">
-                      <span
-                        className="inline-flex items-center justify-center w-7 h-7 rounded-full mr-2"
-                        style={{
-                          background: 'linear-gradient(135deg, rgba(79, 209, 197, 0.3), rgba(255, 160, 122, 0.3))',
-                          border: '1px solid rgba(255, 255, 255, 0.3)',
-                        }}
-                      >
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="7" cy="7" r="2" fill="#FFB6A3" opacity="0.8" />
-                          <circle cx="7" cy="7" r="5" stroke="#4FD1C5" strokeWidth="1" opacity="0.6" />
-                        </svg>
-                      </span>
-                      <span
-                        className="text-sm font-medium mr-2"
-                        style={{ color: '#FFE5D4' }}
-                      >{record.time}</span>
-                      <span className="text-sm font-bold mr-2">{record.stock}</span>
-                      <span
-                        className="text-xs px-3 py-1 rounded-full font-medium"
-                        style={{
-                          background: 'linear-gradient(135deg, rgba(255, 160, 122, 0.4), rgba(255, 182, 163, 0.3))',
-                          border: '1px solid rgba(255, 255, 255, 0.2)',
-                        }}
-                      >無料レポート取得</span>
-                    </span>
-                  ))}
-                </div>
+              <WavePatternDivider color="#1A2B4F" />
+
+              <JapaneseNewsBanner />
+
+              <WavePatternDivider color="#E60012" flip />
+
+              <div className="flex justify-center space-x-6 my-8">
+                <SealBadge text="信頼" subText="安心" />
+                <SealBadge text="無料" subText="完全" />
+                <SealBadge text="迅速" subText="即時" />
               </div>
-            </div>
 
-            <div className="flex-[4] flex flex-col justify-end">
-              <FormContainer>
-                <ModernStockInput
+              <JapaneseFormCard>
+                <JapaneseStockInput
                   value={inputValue}
                   onChange={setInputValue}
                   onStockSelect={handleStockSelect}
@@ -568,11 +534,15 @@ export default function RefactoredHome() {
                 )}
 
                 {!loading && diagnosisState === 'initial' && (
-                  <ModernActionButton onClick={runDiagnosis} disabled={!inputValue || !stockCode} />
+                  <div className="mt-6">
+                    <JapaneseActionButton onClick={runDiagnosis} disabled={!inputValue || !stockCode}>
+                      無料で診断を開始
+                    </JapaneseActionButton>
+                  </div>
                 )}
 
                 {diagnosisState === 'error' && (
-                  <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-center animate-fadeIn mt-4">
+                  <div className="bg-red-50 border-2 border-red-600 rounded-lg p-4 text-center animate-fadeIn mt-4">
                     <h3 className="text-lg font-bold text-red-600 mb-2">診断エラー</h3>
                     <p className="text-red-600 text-sm mb-4 whitespace-pre-line">{error}</p>
                     <button
@@ -580,13 +550,13 @@ export default function RefactoredHome() {
                         setDiagnosisState('initial');
                         setError(null);
                       }}
-                      className="px-6 py-3 bg-gray-900 text-white font-bold rounded-xl transition-all shadow-lg hover:opacity-90"
+                      className="px-6 py-3 bg-gray-900 text-white font-bold rounded transition-all shadow-lg hover:opacity-90"
                     >
                       もう一度試す
                     </button>
                   </div>
                 )}
-              </FormContainer>
+              </JapaneseFormCard>
             </div>
           </div>
         ) : (
