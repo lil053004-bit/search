@@ -579,7 +579,7 @@ export default function RefactoredHome() {
           </div>
 
           <div className="prose max-w-none">
-            <AnalysisRenderer analysis={analysisResult} />
+            <AnalysisRenderer text={analysisResult} />
           </div>
 
           {diagnosisState === 'results' && (
