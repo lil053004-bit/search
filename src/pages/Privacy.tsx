@@ -7,7 +7,7 @@ export default function Privacy() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-accent-cyan hover:text-accent-cyan-light mb-6 transition-colors"
+          className="inline-flex items-center gap-2 text-accent-yellow hover:text-accent-yellow-light mb-6 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           トップページに戻る
@@ -16,7 +16,7 @@ export default function Privacy() {
         <div className="bg-surface-dark rounded-xl shadow-dark-glow border border-border-dark p-8">
           <div className="flex items-center gap-3 mb-6">
             <div className="bg-dark-blue p-3 rounded-lg">
-              <Shield className="w-6 h-6 text-accent-cyan" />
+              <Shield className="w-6 h-6 text-accent-yellow" />
             </div>
             <h1 className="text-3xl font-bold text-text-primary">プライバシーポリシー</h1>
           </div>
@@ -62,14 +62,14 @@ export default function Privacy() {
 
             <section className="mb-8">
               <h2 className="text-xl font-bold text-text-primary mb-4">4. Google AdSense について</h2>
-              <div className="bg-dark-blue border-l-4 border-accent-cyan p-4 mb-4">
+              <div className="bg-dark-blue border-l-4 border-accent-yellow p-4 mb-4">
                 <p className="text-text-primary font-semibold mb-2">第三者配信事業者による広告配信</p>
                 <p className="text-text-secondary leading-relaxed mb-3">
                   当サービスでは、Google AdSense を使用して広告を配信しています。
                   Google AdSense は Cookie を使用して、利用者が当サイトや他のサイトにアクセスした際の情報に基づいて広告を配信します。
                 </p>
                 <p className="text-text-secondary leading-relaxed">
-                  利用者は、<a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-accent-cyan hover:underline">Googleの広告設定ページ</a>で、
+                  利用者は、<a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-accent-yellow hover:underline">Googleの広告設定ページ</a>で、
                   パーソナライズド広告を無効にすることができます。
                 </p>
               </div>

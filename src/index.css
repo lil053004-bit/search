@@ -23,7 +23,7 @@
   }
 
   body {
-    background: #0B1120;
+    background: #030712;
     color: #F8FAFC;
     min-height: 100vh;
     overflow-x: hidden;
@@ -34,7 +34,7 @@
 
   * {
     scrollbar-width: thin;
-    scrollbar-color: #22D3EE #1E2A3A;
+    scrollbar-color: #FCD34D #1E293B;
   }
 
   *::-webkit-scrollbar {
@@ -43,16 +43,16 @@
   }
 
   *::-webkit-scrollbar-track {
-    background: #1E2A3A;
+    background: #1E293B;
   }
 
   *::-webkit-scrollbar-thumb {
-    background: #22D3EE;
+    background: #FCD34D;
     border-radius: 4px;
   }
 
   *::-webkit-scrollbar-thumb:hover {
-    background: #67E8F9;
+    background: #FDE68A;
   }
 
   body[data-modal-open] header,
@@ -92,10 +92,10 @@
 
   @keyframes glow-pulse {
     0%, 100% {
-      box-shadow: 0 0 20px rgba(34, 211, 238, 0.5);
+      box-shadow: 0 0 20px rgba(252, 211, 77, 0.5);
     }
     50% {
-      box-shadow: 0 0 40px rgba(34, 211, 238, 0.8), 0 0 60px rgba(34, 211, 238, 0.4);
+      box-shadow: 0 0 40px rgba(252, 211, 77, 0.8), 0 0 60px rgba(252, 211, 77, 0.4);
     }
   }
 

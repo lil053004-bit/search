@@ -7,7 +7,7 @@ export default function SpecifiedCommercialTransactionAct() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-accent-cyan hover:text-accent-cyan-light mb-6 transition-colors"
+          className="inline-flex items-center gap-2 text-accent-yellow hover:text-accent-yellow-light mb-6 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           トップページに戻る
@@ -16,7 +16,7 @@ export default function SpecifiedCommercialTransactionAct() {
         <div className="bg-surface-dark rounded-xl shadow-dark-glow border border-border-dark p-8">
           <div className="flex items-center gap-3 mb-6">
             <div className="bg-dark-blue p-3 rounded-lg">
-              <FileText className="w-6 h-6 text-accent-cyan" />
+              <FileText className="w-6 h-6 text-accent-yellow" />
             </div>
             <h1 className="text-3xl font-bold text-text-primary">特定商取引法に基づく表記</h1>
           </div>
@@ -29,7 +29,7 @@ export default function SpecifiedCommercialTransactionAct() {
             <section className="border-b border-border-dark pb-6">
               <div className="flex items-start gap-4">
                 <div className="bg-dark-blue p-3 rounded-lg flex-shrink-0">
-                  <Building className="w-5 h-5 text-accent-cyan" />
+                  <Building className="w-5 h-5 text-accent-yellow" />
                 </div>
                 <div className="flex-1">
                   <h2 className="text-xl font-bold text-text-primary mb-4">販売業者情報</h2>
@@ -77,7 +77,7 @@ export default function SpecifiedCommercialTransactionAct() {
                     </div>
                     <div className="grid sm:grid-cols-3 gap-2">
                       <dt className="font-semibold text-text-primary">メールアドレス</dt>
-                      <dd className="sm:col-span-2 text-accent-cyan">support@stockwl.jp</dd>
+                      <dd className="sm:col-span-2 text-accent-yellow">support@stockwl.jp</dd>
                     </div>
                     <div className="grid sm:grid-cols-3 gap-2">
                       <dt className="font-semibold text-text-primary">受付時間</dt>
@@ -94,19 +94,19 @@ export default function SpecifiedCommercialTransactionAct() {
                 <h3 className="font-bold text-text-primary mb-3">提供サービス</h3>
                 <ul className="space-y-2 text-text-secondary">
                   <li className="flex items-start gap-2">
-                    <span className="text-accent-cyan mt-1">•</span>
+                    <span className="text-accent-yellow mt-1">•</span>
                     <span>AI技術を活用した株式情報の提供および分析サービス</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-accent-cyan mt-1">•</span>
+                    <span className="text-accent-yellow mt-1">•</span>
                     <span>株価データ、チャート、テクニカル指標の表示</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-accent-cyan mt-1">•</span>
+                    <span className="text-accent-yellow mt-1">•</span>
                     <span>AI分析レポートの生成と提供</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-accent-cyan mt-1">•</span>
+                    <span className="text-accent-yellow mt-1">•</span>
                     <span>投資情報の提供（情報提供のみ、投資助言には該当しません）</span>
                   </li>
                 </ul>
@@ -115,7 +115,7 @@ export default function SpecifiedCommercialTransactionAct() {
 
             <section className="border-b border-border-dark pb-6">
               <h2 className="text-xl font-bold text-text-primary mb-4">サービス料金</h2>
-              <div className="bg-dark-blue rounded-lg p-5 border-2 border-accent-cyan">
+              <div className="bg-dark-blue rounded-lg p-5 border-2 border-accent-yellow">
                 <div className="space-y-3">
                   <div className="flex items-start justify-between gap-4">
                     <div>
@@ -125,7 +125,7 @@ export default function SpecifiedCommercialTransactionAct() {
                       </p>
                     </div>
                     <div className="text-right flex-shrink-0">
-                      <p className="text-2xl font-bold text-accent-cyan">無料</p>
+                      <p className="text-2xl font-bold text-accent-yellow">無料</p>
                     </div>
                   </div>
                   <div className="bg-surface-dark rounded p-3">
@@ -147,15 +147,15 @@ export default function SpecifiedCommercialTransactionAct() {
                 </p>
                 <ul className="mt-3 space-y-2 text-text-secondary">
                   <li className="flex items-start gap-2">
-                    <span className="text-accent-cyan mt-1">•</span>
+                    <span className="text-accent-yellow mt-1">•</span>
                     <span>クレジットカード決済（Visa、Mastercard、JCB、American Express等）</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-accent-cyan mt-1">•</span>
+                    <span className="text-accent-yellow mt-1">•</span>
                     <span>銀行振込</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-accent-cyan mt-1">•</span>
+                    <span className="text-accent-yellow mt-1">•</span>
                     <span>コンビニ決済</span>
                   </li>
                 </ul>
@@ -187,11 +187,11 @@ export default function SpecifiedCommercialTransactionAct() {
                 </p>
                 <ul className="mt-3 space-y-2 text-text-secondary">
                   <li className="flex items-start gap-2">
-                    <span className="text-accent-cyan mt-1">•</span>
+                    <span className="text-accent-yellow mt-1">•</span>
                     <span>システムの不具合により、サービスが正常に提供されなかった場合</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-accent-cyan mt-1">•</span>
+                    <span className="text-accent-yellow mt-1">•</span>
                     <span>当社の責に帰すべき事由により、サービス提供が不可能となった場合</span>
                   </li>
                 </ul>
@@ -204,7 +204,7 @@ export default function SpecifiedCommercialTransactionAct() {
                 <p className="text-text-secondary leading-relaxed mb-3">
                   お客様の個人情報は、個人情報保護法に基づき適切に管理いたします。
                   詳細は
-                  <Link to="/privacy" className="text-accent-cyan hover:underline font-semibold mx-1">
+                  <Link to="/privacy" className="text-accent-yellow hover:underline font-semibold mx-1">
                     プライバシーポリシー
                   </Link>
                   をご確認ください。
@@ -237,23 +237,23 @@ export default function SpecifiedCommercialTransactionAct() {
 
             <section>
               <h2 className="text-xl font-bold text-text-primary mb-4">お問い合わせ</h2>
-              <div className="bg-dark-blue rounded-lg p-6 border-2 border-accent-cyan">
+              <div className="bg-dark-blue rounded-lg p-6 border-2 border-accent-yellow">
                 <p className="text-text-secondary leading-relaxed mb-4">
                   特定商取引法に関するご質問、その他お問い合わせは、
                   以下の方法でご連絡ください。
                 </p>
                 <div className="flex items-start gap-3 mb-4">
-                  <Mail className="w-5 h-5 text-accent-cyan mt-1 flex-shrink-0" />
+                  <Mail className="w-5 h-5 text-accent-yellow mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-text-primary mb-1">連絡先</p>
                     <p className="text-text-secondary">電話: +81 03-5456-7890</p>
-                    <p className="text-accent-cyan">support@stockwl.jp</p>
+                    <p className="text-accent-yellow">support@stockwl.jp</p>
                     <p className="text-sm text-text-muted mt-1">平日 9:00-18:00（土日祝日を除く）</p>
                   </div>
                 </div>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-accent-cyan text-dark-navy rounded-lg hover:bg-accent-cyan-light transition-colors font-semibold"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-accent-yellow text-dark-navy rounded-lg hover:bg-accent-yellow-light transition-colors font-semibold"
                 >
                   お問い合わせフォームへ
                 </Link>

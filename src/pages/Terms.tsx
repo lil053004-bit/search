@@ -7,7 +7,7 @@ export default function Terms() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-accent-cyan hover:text-accent-cyan-light mb-6 transition-colors"
+          className="inline-flex items-center gap-2 text-accent-yellow hover:text-accent-yellow-light mb-6 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           トップページに戻る
@@ -16,7 +16,7 @@ export default function Terms() {
         <div className="bg-surface-dark rounded-xl shadow-dark-glow border border-border-dark p-8">
           <div className="flex items-center gap-3 mb-6">
             <div className="bg-dark-blue p-3 rounded-lg">
-              <FileText className="w-6 h-6 text-accent-cyan" />
+              <FileText className="w-6 h-6 text-accent-yellow" />
             </div>
             <h1 className="text-3xl font-bold text-text-primary">利用規約</h1>
           </div>

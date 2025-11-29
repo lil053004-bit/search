@@ -7,7 +7,7 @@ export default function Contact() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-accent-cyan hover:text-accent-cyan-light mb-6 transition-colors"
+          className="inline-flex items-center gap-2 text-accent-yellow hover:text-accent-yellow-light mb-6 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           トップページに戻る
@@ -30,7 +30,7 @@ export default function Contact() {
             <section className="mb-8">
               <h2 className="text-xl font-semibold text-text-primary mb-4">受付時間</h2>
               <div className="bg-dark-blue rounded-2xl p-4 flex items-start gap-3 border border-border-dark">
-                <Clock className="w-5 h-5 text-accent-cyan mt-1 flex-shrink-0" />
+                <Clock className="w-5 h-5 text-accent-yellow mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-semibold text-text-primary mb-1">平日 9:00-18:00</p>
                   <p className="text-sm text-text-muted">
@@ -54,7 +54,7 @@ export default function Contact() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-cyan/20 focus:border-accent-cyan transition-all text-text-primary"
+                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-yellow/20 focus:border-accent-yellow transition-all text-text-primary"
                     placeholder="山田 太郎"
                   />
                 </div>
@@ -68,7 +68,7 @@ export default function Contact() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-cyan/20 focus:border-accent-cyan transition-all text-text-primary"
+                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-yellow/20 focus:border-accent-yellow transition-all text-text-primary"
                     placeholder="example@email.com"
                   />
                 </div>
@@ -81,7 +81,7 @@ export default function Contact() {
                     id="subject"
                     name="subject"
                     required
-                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-cyan/20 focus:border-accent-cyan transition-all text-text-primary"
+                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-yellow/20 focus:border-accent-yellow transition-all text-text-primary"
                   >
                     <option value="">選択してください</option>
                     <option value="service">サービス内容について</option>
@@ -100,7 +100,7 @@ export default function Contact() {
                     name="message"
                     required
                     rows={8}
-                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-cyan/20 focus:border-accent-cyan transition-all resize-none text-text-primary"
+                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-yellow/20 focus:border-accent-yellow transition-all resize-none text-text-primary"
                     placeholder="お問い合わせ内容を詳しくご記入ください"
                   />
                 </div>
@@ -110,10 +110,10 @@ export default function Contact() {
                     <input
                       type="checkbox"
                       required
-                      className="mt-1 w-4 h-4 text-accent-cyan border-border-dark rounded focus:ring-accent-cyan"
+                      className="mt-1 w-4 h-4 text-accent-yellow border-border-dark rounded focus:ring-accent-yellow"
                     />
                     <span className="text-sm text-text-secondary">
-                      <Link to="/privacy" className="text-accent-cyan hover:underline">プライバシーポリシー</Link>
+                      <Link to="/privacy" className="text-accent-yellow hover:underline">プライバシーポリシー</Link>
                       に同意します <span className="text-accent-orange">*</span>
                     </span>
                   </label>
@@ -148,7 +148,7 @@ export default function Contact() {
 
             <div className="bg-surface-light rounded-2xl p-6 border border-border-dark">
               <h3 className="font-semibold text-text-primary mb-3 flex items-center gap-2">
-                <Mail className="w-5 h-5 text-accent-cyan" />
+                <Mail className="w-5 h-5 text-accent-yellow" />
                 運営会社情報
               </h3>
               <div className="space-y-2 text-sm text-text-secondary">

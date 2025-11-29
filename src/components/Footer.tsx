@@ -19,7 +19,7 @@ export default function Footer() {
               </h3>
 
               <div className="space-y-3 text-sm leading-relaxed text-text-secondary">
-                <div className="bg-dark-blue rounded-2xl p-4 border-l-4 border-accent-cyan">
+                <div className="bg-dark-blue rounded-2xl p-4 border-l-4 border-accent-yellow">
                   <p className="font-semibold text-text-primary mb-2">【サービスの性質】</p>
                   <p>
                     本サービスは、AI技術を活用した株式情報の提供および分析ツールです。
@@ -37,7 +37,7 @@ export default function Footer() {
                   </p>
                 </div>
 
-                <div className="bg-dark-blue rounded-2xl p-4 border-l-4 border-accent-cyan">
+                <div className="bg-dark-blue rounded-2xl p-4 border-l-4 border-accent-yellow">
                   <p className="font-semibold text-text-primary mb-2">【情報の正確性について】</p>
                   <p>
                     提供される情報は、信頼できると判断した情報源から取得していますが、
@@ -78,43 +78,43 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-8 mb-8">
             <div>
               <h4 className="font-semibold text-text-primary mb-4 flex items-center gap-2">
-                <FileText className="w-4 h-4 text-accent-cyan" />
+                <FileText className="w-4 h-4 text-accent-yellow" />
                 法的文書
               </h4>
               <ul className="space-y-3 text-sm">
                 <li>
                   <Link
                     to="/company"
-                    className="text-text-secondary hover:text-accent-cyan transition-colors flex items-center gap-2 group"
+                    className="text-text-secondary hover:text-accent-yellow transition-colors flex items-center gap-2 group"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent-cyan/50 group-hover:bg-accent-cyan transition-colors"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent-yellow/50 group-hover:bg-accent-yellow transition-colors"></span>
                     会社概要
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/terms"
-                    className="text-text-secondary hover:text-accent-cyan transition-colors flex items-center gap-2 group"
+                    className="text-text-secondary hover:text-accent-yellow transition-colors flex items-center gap-2 group"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent-cyan/50 group-hover:bg-accent-cyan transition-colors"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent-yellow/50 group-hover:bg-accent-yellow transition-colors"></span>
                     利用規約
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/privacy"
-                    className="text-text-secondary hover:text-accent-cyan transition-colors flex items-center gap-2 group"
+                    className="text-text-secondary hover:text-accent-yellow transition-colors flex items-center gap-2 group"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent-cyan/50 group-hover:bg-accent-cyan transition-colors"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent-yellow/50 group-hover:bg-accent-yellow transition-colors"></span>
                     プライバシーポリシー
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/specified-commercial-transaction-act"
-                    className="text-text-secondary hover:text-accent-cyan transition-colors flex items-center gap-2 group"
+                    className="text-text-secondary hover:text-accent-yellow transition-colors flex items-center gap-2 group"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent-cyan/50 group-hover:bg-accent-cyan transition-colors"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent-yellow/50 group-hover:bg-accent-yellow transition-colors"></span>
                     特定商取引法表記
                   </Link>
                 </li>

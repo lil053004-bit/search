@@ -11,7 +11,7 @@ export default function SoftFormCard({ children }: SoftFormCardProps) {
         className="bg-surface-dark rounded-3xl shadow-dark-glow overflow-hidden border border-border-dark"
       >
         <div
-          className="px-8 py-5 border-b border-border-dark bg-dark-cyan-gradient"
+          className="px-8 py-5 border-b border-border-dark bg-dark-yellow-gradient"
         >
           <div className="flex items-center justify-between">
             <div>
@@ -20,8 +20,8 @@ export default function SoftFormCard({ children }: SoftFormCardProps) {
               </h2>
               <p className="text-sm text-text-secondary mt-1">銘柄コードまたは銘柄名を入力してください</p>
             </div>
-            <div className="flex items-center space-x-2 px-3 py-1.5 bg-dark-blue/60 backdrop-blur-sm rounded-full border border-accent-cyan/30">
-              <div className="w-2 h-2 rounded-full bg-accent-cyan animate-pulse"></div>
+            <div className="flex items-center space-x-2 px-3 py-1.5 bg-dark-blue/60 backdrop-blur-sm rounded-full border border-accent-yellow/30">
+              <div className="w-2 h-2 rounded-full bg-accent-yellow animate-pulse"></div>
               <span className="text-xs text-text-primary font-medium">入力可能</span>
             </div>
           </div>
@@ -37,8 +37,8 @@ export default function SoftFormCard({ children }: SoftFormCardProps) {
           <div className="flex items-center justify-center space-x-6 text-xs text-text-muted">
             <div className="flex items-center space-x-2">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 14A6 6 0 108 2a6 6 0 000 12z" stroke="#22D3EE" strokeWidth="1.5" fill="none"/>
-                <path d="M6 8l1.5 1.5L10.5 6.5" stroke="#22D3EE" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M8 14A6 6 0 108 2a6 6 0 000 12z" stroke="#FCD34D" strokeWidth="1.5" fill="none"/>
+                <path d="M6 8l1.5 1.5L10.5 6.5" stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <span>安全な接続</span>
             </div>
