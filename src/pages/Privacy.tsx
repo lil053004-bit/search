@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Privacy() {
   return (
-    <div className="min-h-screen bg-dark-gradient">
+    <div className="min-h-screen bg-light-gradient">
       <div className="max-w-4xl mx-auto px-4 py-8">
         <Link
           to="/"
@@ -13,9 +13,9 @@ export default function Privacy() {
           トップページに戻る
         </Link>
 
-        <div className="bg-surface-dark rounded-xl shadow-dark-glow border border-border-dark p-8">
+        <div className="bg-surface-cream rounded-xl shadow-soft-shadow border border-border-medium p-8">
           <div className="flex items-center gap-3 mb-6">
-            <div className="bg-dark-blue p-3 rounded-lg">
+            <div className="bg-pale-yellow p-3 rounded-lg">
               <Shield className="w-6 h-6 text-accent-coral" />
             </div>
             <h1 className="text-3xl font-bold text-text-primary">プライバシーポリシー</h1>
@@ -62,7 +62,7 @@ export default function Privacy() {
 
             <section className="mb-8">
               <h2 className="text-xl font-bold text-text-primary mb-4">4. Google AdSense について</h2>
-              <div className="bg-dark-blue border-l-4 border-accent-coral p-4 mb-4">
+              <div className="bg-pale-yellow border-l-4 border-accent-coral p-4 mb-4">
                 <p className="text-text-primary font-semibold mb-2">第三者配信事業者による広告配信</p>
                 <p className="text-text-secondary leading-relaxed mb-3">
                   当サービスでは、Google AdSense を使用して広告を配信しています。
@@ -134,7 +134,7 @@ export default function Privacy() {
               </p>
             </section>
 
-            <div className="bg-surface-light rounded-lg p-6 mt-8 border border-border-dark">
+            <div className="bg-surface-light rounded-lg p-6 mt-8 border border-border-medium">
               <h3 className="font-bold text-text-primary mb-3">お問い合わせ</h3>
               <p className="text-sm text-text-secondary mb-2">
                 本ポリシーに関するご質問、個人情報の取り扱いに関するご相談は、お問い合わせフォームよりご連絡ください。

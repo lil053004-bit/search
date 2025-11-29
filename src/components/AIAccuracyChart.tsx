@@ -1,23 +1,23 @@
 export default function AIAccuracyChart() {
   return (
-    <div className="w-full max-w-2xl mx-auto p-8 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl shadow-lg border border-blue-200">
+    <div className="w-full max-w-2xl mx-auto p-8 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl shadow-soft-shadow-lg border border-blue-200">
       <div className="text-center mb-6">
         <h3 className="text-2xl font-bold text-blue-900 mb-2">AI株価予測精度</h3>
         <p className="text-sm text-blue-600">機械学習モデルによる高精度分析</p>
       </div>
 
       <div className="grid grid-cols-3 gap-4 mb-8">
-        <div className="bg-white rounded-lg p-4 shadow-md text-center border border-blue-100">
+        <div className="bg-surface-light rounded-lg p-4 shadow-md text-center border border-blue-100">
           <div className="text-3xl font-bold text-blue-600 mb-1">94%</div>
-          <div className="text-xs text-gray-600">トレンド予測</div>
+          <div className="text-xs text-text-secondary">トレンド予測</div>
         </div>
-        <div className="bg-white rounded-lg p-4 shadow-md text-center border border-indigo-100">
+        <div className="bg-surface-light rounded-lg p-4 shadow-md text-center border border-indigo-100">
           <div className="text-3xl font-bold text-indigo-600 mb-1">87%</div>
-          <div className="text-xs text-gray-600">価格変動予測</div>
+          <div className="text-xs text-text-secondary">価格変動予測</div>
         </div>
-        <div className="bg-white rounded-lg p-4 shadow-md text-center border border-cyan-100">
+        <div className="bg-surface-light rounded-lg p-4 shadow-md text-center border border-cyan-100">
           <div className="text-3xl font-bold text-cyan-600 mb-1">91%</div>
-          <div className="text-xs text-gray-600">リスク評価</div>
+          <div className="text-xs text-text-secondary">リスク評価</div>
         </div>
       </div>
 
@@ -75,7 +75,7 @@ export default function AIAccuracyChart() {
         </div>
       </div>
 
-      <div className="bg-white rounded-lg p-4 border border-blue-200">
+      <div className="bg-surface-light rounded-lg p-4 border border-blue-200">
         <div className="flex items-center justify-center gap-2 text-blue-900">
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />

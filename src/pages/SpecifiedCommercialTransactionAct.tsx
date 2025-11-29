@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function SpecifiedCommercialTransactionAct() {
   return (
-    <div className="min-h-screen bg-dark-gradient">
+    <div className="min-h-screen bg-light-gradient">
       <div className="max-w-4xl mx-auto px-4 py-8">
         <Link
           to="/"
@@ -13,9 +13,9 @@ export default function SpecifiedCommercialTransactionAct() {
           トップページに戻る
         </Link>
 
-        <div className="bg-surface-dark rounded-xl shadow-dark-glow border border-border-dark p-8">
+        <div className="bg-surface-cream rounded-xl shadow-soft-shadow border border-border-medium p-8">
           <div className="flex items-center gap-3 mb-6">
-            <div className="bg-dark-blue p-3 rounded-lg">
+            <div className="bg-pale-yellow p-3 rounded-lg">
               <FileText className="w-6 h-6 text-accent-coral" />
             </div>
             <h1 className="text-3xl font-bold text-text-primary">特定商取引法に基づく表記</h1>
@@ -26,9 +26,9 @@ export default function SpecifiedCommercialTransactionAct() {
           </p>
 
           <div className="space-y-6">
-            <section className="border-b border-border-dark pb-6">
+            <section className="border-b border-border-medium pb-6">
               <div className="flex items-start gap-4">
-                <div className="bg-dark-blue p-3 rounded-lg flex-shrink-0">
+                <div className="bg-pale-yellow p-3 rounded-lg flex-shrink-0">
                   <Building className="w-5 h-5 text-accent-coral" />
                 </div>
                 <div className="flex-1">
@@ -63,9 +63,9 @@ export default function SpecifiedCommercialTransactionAct() {
               </div>
             </section>
 
-            <section className="border-b border-border-dark pb-6">
+            <section className="border-b border-border-medium pb-6">
               <div className="flex items-start gap-4">
-                <div className="bg-dark-blue p-3 rounded-lg flex-shrink-0">
+                <div className="bg-pale-yellow p-3 rounded-lg flex-shrink-0">
                   <Phone className="w-5 h-5 text-accent-peach" />
                 </div>
                 <div className="flex-1">
@@ -88,9 +88,9 @@ export default function SpecifiedCommercialTransactionAct() {
               </div>
             </section>
 
-            <section className="border-b border-border-dark pb-6">
+            <section className="border-b border-border-medium pb-6">
               <h2 className="text-xl font-bold text-text-primary mb-4">サービス内容</h2>
-              <div className="bg-surface-light rounded-lg p-5 border border-border-dark">
+              <div className="bg-surface-light rounded-lg p-5 border border-border-medium">
                 <h3 className="font-bold text-text-primary mb-3">提供サービス</h3>
                 <ul className="space-y-2 text-text-secondary">
                   <li className="flex items-start gap-2">
@@ -113,9 +113,9 @@ export default function SpecifiedCommercialTransactionAct() {
               </div>
             </section>
 
-            <section className="border-b border-border-dark pb-6">
+            <section className="border-b border-border-medium pb-6">
               <h2 className="text-xl font-bold text-text-primary mb-4">サービス料金</h2>
-              <div className="bg-dark-blue rounded-lg p-5 border-2 border-accent-coral">
+              <div className="bg-pale-yellow rounded-lg p-5 border-2 border-accent-coral">
                 <div className="space-y-3">
                   <div className="flex items-start justify-between gap-4">
                     <div>
@@ -128,7 +128,7 @@ export default function SpecifiedCommercialTransactionAct() {
                       <p className="text-2xl font-bold text-accent-coral">無料</p>
                     </div>
                   </div>
-                  <div className="bg-surface-dark rounded p-3">
+                  <div className="bg-surface-cream rounded p-3">
                     <p className="text-sm text-text-secondary leading-relaxed">
                       現在、当サービスは基本機能を無料で提供しております。
                       今後、プレミアム機能を追加する場合は、事前にお知らせいたします。
@@ -138,9 +138,9 @@ export default function SpecifiedCommercialTransactionAct() {
               </div>
             </section>
 
-            <section className="border-b border-border-dark pb-6">
+            <section className="border-b border-border-medium pb-6">
               <h2 className="text-xl font-bold text-text-primary mb-4">お支払い方法</h2>
-              <div className="bg-surface-light rounded-lg p-5 border border-border-dark">
+              <div className="bg-surface-light rounded-lg p-5 border border-border-medium">
                 <p className="text-text-secondary leading-relaxed">
                   現在、有料サービスは提供しておりません。
                   今後、有料プランを導入する際は、以下の決済方法を予定しております。
@@ -162,9 +162,9 @@ export default function SpecifiedCommercialTransactionAct() {
               </div>
             </section>
 
-            <section className="border-b border-border-dark pb-6">
+            <section className="border-b border-border-medium pb-6">
               <h2 className="text-xl font-bold text-text-primary mb-4">サービス提供時期</h2>
-              <div className="bg-surface-light rounded-lg p-5 border border-border-dark">
+              <div className="bg-surface-light rounded-lg p-5 border border-border-medium">
                 <p className="text-text-secondary leading-relaxed">
                   サービスはお申し込み後、即時ご利用いただけます。
                   AI診断結果の生成には、通常数秒から数十秒程度のお時間をいただきます。
@@ -172,9 +172,9 @@ export default function SpecifiedCommercialTransactionAct() {
               </div>
             </section>
 
-            <section className="border-b border-border-dark pb-6">
+            <section className="border-b border-border-medium pb-6">
               <h2 className="text-xl font-bold text-text-primary mb-4">返品・キャンセルについて</h2>
-              <div className="bg-surface-light rounded-lg p-5 border border-border-dark">
+              <div className="bg-surface-light rounded-lg p-5 border border-border-medium">
                 <h3 className="font-bold text-text-primary mb-3">無料サービスについて</h3>
                 <p className="text-text-secondary leading-relaxed mb-4">
                   現在提供している無料サービスについては、
@@ -198,9 +198,9 @@ export default function SpecifiedCommercialTransactionAct() {
               </div>
             </section>
 
-            <section className="border-b border-border-dark pb-6">
+            <section className="border-b border-border-medium pb-6">
               <h2 className="text-xl font-bold text-text-primary mb-4">個人情報の取り扱い</h2>
-              <div className="bg-surface-light rounded-lg p-5 border border-border-dark">
+              <div className="bg-surface-light rounded-lg p-5 border border-border-medium">
                 <p className="text-text-secondary leading-relaxed mb-3">
                   お客様の個人情報は、個人情報保護法に基づき適切に管理いたします。
                   詳細は
@@ -212,9 +212,9 @@ export default function SpecifiedCommercialTransactionAct() {
               </div>
             </section>
 
-            <section className="border-b border-border-dark pb-6">
+            <section className="border-b border-border-medium pb-6">
               <h2 className="text-xl font-bold text-text-primary mb-4">免責事項</h2>
-              <div className="bg-dark-blue border-l-4 border-accent-peach p-5 rounded-r-lg">
+              <div className="bg-pale-yellow border-l-4 border-accent-peach p-5 rounded-r-lg">
                 <p className="text-accent-peach font-semibold mb-3">重要なお知らせ</p>
                 <div className="space-y-2 text-text-secondary text-sm leading-relaxed">
                   <p>
@@ -237,7 +237,7 @@ export default function SpecifiedCommercialTransactionAct() {
 
             <section>
               <h2 className="text-xl font-bold text-text-primary mb-4">お問い合わせ</h2>
-              <div className="bg-dark-blue rounded-lg p-6 border-2 border-accent-coral">
+              <div className="bg-pale-yellow rounded-lg p-6 border-2 border-accent-coral">
                 <p className="text-text-secondary leading-relaxed mb-4">
                   特定商取引法に関するご質問、その他お問い合わせは、
                   以下の方法でご連絡ください。
@@ -261,7 +261,7 @@ export default function SpecifiedCommercialTransactionAct() {
             </section>
           </div>
 
-          <div className="mt-8 pt-6 border-t border-border-dark">
+          <div className="mt-8 pt-6 border-t border-border-medium">
             <p className="text-sm text-text-muted text-center">
               最終更新日: 2025年1月15日
             </p>

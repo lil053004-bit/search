@@ -96,7 +96,7 @@ export default function JapaneseStockInput({ value, onChange, onStockSelect }: J
             onChange={(e) => onChange(e.target.value)}
             onFocus={handleInputFocus}
             placeholder="例: 7203 / トヨタ自動車"
-            className="w-full px-4 py-3 text-base text-gray-900 bg-white rounded border-2 border-gray-300 focus:border-red-600 focus:outline-none placeholder-gray-400 transition-all duration-200"
+            className="w-full px-4 py-3 text-base text-gray-900 bg-surface-light rounded border-2 border-gray-300 focus:border-red-600 focus:outline-none placeholder-gray-400 transition-all duration-200"
             style={{
               fontFamily: "'Noto Sans JP', sans-serif",
             }}
@@ -116,7 +116,7 @@ export default function JapaneseStockInput({ value, onChange, onStockSelect }: J
       {showDropdown && currentResults.length > 0 && (
         <div
           ref={dropdownRef}
-          className="relative z-[9999] w-full bg-white rounded border-2 border-gray-300 shadow-xl overflow-hidden"
+          className="relative z-[9999] w-full bg-surface-light rounded border-2 border-gray-300 shadow-xl overflow-hidden"
         >
           <div
             className="px-3 py-2 text-xs font-bold text-white"
@@ -133,7 +133,7 @@ export default function JapaneseStockInput({ value, onChange, onStockSelect }: J
               <button
                 key={`${stock.code}-${index}`}
                 onClick={() => handleStockClick(stock)}
-                className="w-full px-4 py-3 text-left hover:bg-gray-50 transition-all duration-150 border-b border-gray-100 last:border-b-0"
+                className="w-full px-4 py-3 text-left hover:bg-gray-50 transition-all duration-150 border-b border-border-light last:border-b-0"
               >
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3 flex-1 min-w-0">
@@ -166,7 +166,7 @@ export default function JapaneseStockInput({ value, onChange, onStockSelect }: J
               <button
                 onClick={handlePrevPage}
                 disabled={currentPage === 0}
-                className="flex items-center gap-1 px-3 py-1.5 text-sm font-bold text-gray-700 bg-white border-2 border-gray-300 rounded hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                className="flex items-center gap-1 px-3 py-1.5 text-sm font-bold text-gray-700 bg-surface-light border-2 border-gray-300 rounded hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
                 style={{ fontFamily: "'Noto Sans JP', sans-serif" }}
               >
                 <ChevronLeft className="w-4 h-4" />
@@ -180,7 +180,7 @@ export default function JapaneseStockInput({ value, onChange, onStockSelect }: J
               <button
                 onClick={handleNextPage}
                 disabled={currentPage === totalPages - 1}
-                className="flex items-center gap-1 px-3 py-1.5 text-sm font-bold text-gray-700 bg-white border-2 border-gray-300 rounded hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                className="flex items-center gap-1 px-3 py-1.5 text-sm font-bold text-gray-700 bg-surface-light border-2 border-gray-300 rounded hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
                 style={{ fontFamily: "'Noto Sans JP', sans-serif" }}
               >
                 次へ

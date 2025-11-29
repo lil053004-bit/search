@@ -91,7 +91,7 @@ export default function StockCodeInput({ value, onChange, onStockSelect }: Stock
           onChange={(e) => onChange(e.target.value)}
           onFocus={handleInputFocus}
           placeholder="输入股票代码或名称"
-          className="w-full pl-14 pr-6 py-4 text-lg font-semibold text-gray-800 bg-white border-4 border-blue-400 rounded-xl shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300 focus:border-blue-500 transition-all"
+          className="w-full pl-14 pr-6 py-4 text-lg font-semibold text-text-primary bg-surface-light border-4 border-blue-400 rounded-xl shadow-soft-shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300 focus:border-blue-500 transition-all"
           disabled={isLoading}
         />
       </div>
@@ -99,19 +99,19 @@ export default function StockCodeInput({ value, onChange, onStockSelect }: Stock
       {showDropdown && currentResults.length > 0 && (
         <div
           ref={dropdownRef}
-          className="absolute z-50 w-full mt-2 bg-white border-2 border-blue-200 rounded-xl shadow-xl overflow-hidden"
+          className="absolute z-50 w-full mt-2 bg-surface-light border-2 border-blue-200 rounded-xl shadow-xl overflow-hidden"
         >
           <div className="max-h-80 overflow-y-auto">
             {currentResults.map((stock, index) => (
               <button
                 key={`${stock.code}-${index}`}
                 onClick={() => handleStockClick(stock)}
-                className="w-full px-4 py-3 text-left hover:bg-blue-50 transition-colors border-b border-gray-100 last:border-b-0"
+                className="w-full px-4 py-3 text-left hover:bg-blue-50 transition-colors border-b border-border-light last:border-b-0"
               >
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="font-semibold text-gray-900">{stock.code}</div>
-                    <div className="text-sm text-gray-600">{stock.name}</div>
+                    <div className="text-sm text-text-secondary">{stock.name}</div>
                   </div>
                   <div className="text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded">
                     {stock.market}
@@ -126,20 +126,20 @@ export default function StockCodeInput({ value, onChange, onStockSelect }: Stock
               <button
                 onClick={handlePrevPage}
                 disabled={currentPage === 0}
-                className="flex items-center gap-1 px-3 py-1 text-sm text-gray-700 bg-white border border-gray-300 rounded hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                className="flex items-center gap-1 px-3 py-1 text-sm text-gray-700 bg-surface-light border border-gray-300 rounded hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
                 <ChevronLeft className="w-4 h-4" />
                 上一页
               </button>
 
-              <div className="text-sm text-gray-600">
+              <div className="text-sm text-text-secondary">
                 {currentPage + 1} / {totalPages} 页 (共 {searchResults.length} 个结果)
               </div>
 
               <button
                 onClick={handleNextPage}
                 disabled={currentPage === totalPages - 1}
-                className="flex items-center gap-1 px-3 py-1 text-sm text-gray-700 bg-white border border-gray-300 rounded hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                className="flex items-center gap-1 px-3 py-1 text-sm text-gray-700 bg-surface-light border border-gray-300 rounded hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
                 下一页
                 <ChevronRight className="w-4 h-4" />

@@ -9,9 +9,9 @@ interface DynamicAIPromptProps {
 export default function DynamicAIPrompt({ stockName, stockCode, onStockNameClick }: DynamicAIPromptProps) {
   return (
     <div className="relative mt-8">
-      <div className="bg-white/95 backdrop-blur-sm rounded-2xl px-6 py-5 shadow-2xl border-2 border-blue-300">
+      <div className="bg-surface-light/95 backdrop-blur-sm rounded-2xl px-6 py-5 shadow-2xl border-2 border-blue-300">
         {stockName ? (
-          <p className="text-sm md:text-lg text-gray-800 text-center leading-relaxed">
+          <p className="text-sm md:text-lg text-text-primary text-center leading-relaxed">
             お客様が照会したい可能性のある銘柄を検出しました{' '}
             <span className="relative inline-block">
               <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 animate-bounce z-10" style={{ animationDuration: '1.5s' }}>
@@ -27,7 +27,7 @@ export default function DynamicAIPrompt({ stockName, stockCode, onStockNameClick
             の指標とデータ及びトレンド、AIが準備完了でサービスを提供し、数秒で完全な結果が得られます
           </p>
         ) : (
-          <p className="text-sm md:text-lg text-gray-800 text-center leading-relaxed">
+          <p className="text-sm md:text-lg text-text-primary text-center leading-relaxed">
             株式コードを入力すると、AIが株式の指標、データ、トレンドを分析し、数秒で完全な結果が得られます
           </p>
         )}

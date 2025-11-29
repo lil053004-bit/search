@@ -91,7 +91,7 @@ export default function AdminDashboard() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Header */}
-      <div className="bg-white border-b border-slate-200 shadow-sm">
+      <div className="bg-surface-light border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -115,7 +115,7 @@ export default function AdminDashboard() {
       </div>
 
       {/* Tabs */}
-      <div className="bg-white border-b border-slate-200">
+      <div className="bg-surface-light border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex gap-1">
             <button
@@ -267,7 +267,7 @@ function OverviewTab({ stats, apiStats }: { stats: Stats | null; apiStats: ApiSt
       </div>
 
       {/* Conversion Funnel */}
-      <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+      <div className="bg-surface-light rounded-xl shadow-sm border border-slate-200 p-6">
         <h3 className="text-lg font-bold text-slate-900 mb-4">转化漏斗</h3>
         <div className="space-y-3">
           <FunnelStep
@@ -312,7 +312,7 @@ function StatCard({ icon, label, value, color }: StatCardProps) {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+    <div className="bg-surface-light rounded-xl shadow-sm border border-slate-200 p-6">
       <div className={`inline-flex p-3 rounded-lg ${colorClasses[color]} mb-3`}>
         {icon}
       </div>

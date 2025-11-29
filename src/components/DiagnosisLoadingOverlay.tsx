@@ -88,7 +88,7 @@ export default function DiagnosisLoadingOverlay({
 
           <div className="relative w-full h-3 bg-gray-800/50 rounded-full overflow-hidden mb-3 border" style={{ borderColor: 'rgba(139, 131, 255, 0.3)' }}>
             <div
-              className="absolute top-0 left-0 h-full transition-all duration-300 ease-out shadow-lg"
+              className="absolute top-0 left-0 h-full transition-all duration-300 ease-out shadow-soft-shadow-lg"
               style={{
                 width: `${Math.min(progress, 100)}%`,
                 background: 'linear-gradient(to right, #8B83FF, #6B63FF)',

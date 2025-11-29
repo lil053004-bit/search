@@ -13,7 +13,7 @@ const diagnosisRecords = [
 
 export default function DiagnosisTicker() {
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 overflow-hidden bg-dark-slate/70 backdrop-blur-md py-2 shadow-lg border-b border-border-dark/50">
+    <div className="fixed top-0 left-0 right-0 z-50 overflow-hidden bg-light-yellow/70 backdrop-blur-md py-2 shadow-soft-shadow-lg border-b border-border-medium/50">
       <div className="animate-scroll-left whitespace-nowrap inline-block">
         {[...diagnosisRecords, ...diagnosisRecords, ...diagnosisRecords].map((record, index) => (
           <span key={index} className="inline-flex items-center mx-4 text-white">

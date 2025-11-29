@@ -90,7 +90,7 @@ export default function SoftStockInput({
           onKeyDown={handleKeyDown}
           disabled={disabled}
           placeholder={placeholder}
-          className="w-full h-14 pl-12 pr-4 text-base border-2 border-gray-200 rounded-2xl focus:outline-none focus:border-emerald-300 focus:ring-4 focus:ring-emerald-100 transition-all duration-300 disabled:bg-gray-50 disabled:cursor-not-allowed bg-white"
+          className="w-full h-14 pl-12 pr-4 text-base border-2 border-gray-200 rounded-2xl focus:outline-none focus:border-emerald-300 focus:ring-4 focus:ring-emerald-100 transition-all duration-300 disabled:bg-gray-50 disabled:cursor-not-allowed bg-surface-light"
           style={{
             boxShadow: '0 2px 8px rgba(0, 0, 0, 0.04)'
           }}
@@ -99,7 +99,7 @@ export default function SoftStockInput({
 
       {autoFillMessage && (
         <div className="absolute -top-10 left-0 right-0 flex justify-center">
-          <div className="px-4 py-2 bg-gradient-to-r from-emerald-400 to-teal-400 text-white text-sm rounded-full shadow-lg animate-fade-in">
+          <div className="px-4 py-2 bg-gradient-to-r from-emerald-400 to-teal-400 text-text-primary text-sm rounded-full shadow-soft-shadow-lg animate-fade-in">
             {autoFillMessage}
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function SoftStockInput({
       {showSuggestions && suggestions.length > 0 && (
         <div
           ref={suggestionsRef}
-          className="absolute z-50 w-full mt-2 bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden max-h-64 overflow-y-auto"
+          className="absolute z-50 w-full mt-2 bg-surface-light rounded-2xl shadow-soft-shadow-lg border border-border-light overflow-hidden max-h-64 overflow-y-auto"
           style={{
             boxShadow: '0 8px 24px rgba(0, 0, 0, 0.1)'
           }}
@@ -127,7 +127,7 @@ export default function SoftStockInput({
               onMouseEnter={() => setFocusedIndex(index)}
             >
               <div className="flex items-center space-x-3 flex-1">
-                <span className="text-sm font-semibold text-gray-800 px-2.5 py-1 bg-gradient-to-r from-emerald-100 to-teal-100 rounded-lg">
+                <span className="text-sm font-semibold text-text-primary px-2.5 py-1 bg-gradient-to-r from-emerald-100 to-teal-100 rounded-lg">
                   {suggestion.code}
                 </span>
                 <span className="text-sm text-gray-700">{suggestion.name}</span>

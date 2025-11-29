@@ -1,6 +1,6 @@
 export default function SoftHeader() {
   return (
-    <header className="sticky top-0 z-50 bg-dark-slate/85 backdrop-blur-md border-b border-border-dark shadow-dark-glow">
+    <header className="sticky top-0 z-50 bg-light-yellow/85 backdrop-blur-md border-b border-border-medium shadow-soft-shadow">
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
@@ -13,7 +13,7 @@ export default function SoftHeader() {
                 </svg>
               </div>
               <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-peach-gradient rounded-full flex items-center justify-center">
-                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <div className="w-2 h-2 bg-surface-light rounded-full"></div>
               </div>
             </div>
             <div>
@@ -25,11 +25,11 @@ export default function SoftHeader() {
           </div>
 
           <div className="flex items-center space-x-3">
-            <div className="hidden md:flex items-center space-x-2 px-4 py-2 bg-dark-blue rounded-full border border-accent-coral/30">
+            <div className="hidden md:flex items-center space-x-2 px-4 py-2 bg-pale-yellow rounded-full border border-accent-coral/30">
               <div className="w-2 h-2 rounded-full bg-accent-coral"></div>
               <span className="text-xs font-medium text-accent-coral">情報提供</span>
             </div>
-            <div className="hidden md:flex items-center space-x-2 px-4 py-2 bg-dark-blue rounded-full border border-accent-peach/30">
+            <div className="hidden md:flex items-center space-x-2 px-4 py-2 bg-pale-yellow rounded-full border border-accent-peach/30">
               <div className="w-2 h-2 rounded-full bg-accent-peach"></div>
               <span className="text-xs font-medium text-accent-peach">無料</span>
             </div>

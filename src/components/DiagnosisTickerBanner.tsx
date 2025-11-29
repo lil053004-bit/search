@@ -12,10 +12,10 @@ export default function DiagnosisTickerBanner({ records }: DiagnosisTickerBanner
   const doubledRecords = [...records, ...records];
 
   return (
-    <div className="w-full bg-dark-slate/40 backdrop-blur-sm border-y border-border-dark/50 py-3 overflow-hidden">
+    <div className="w-full bg-light-yellow/40 backdrop-blur-sm border-y border-border-medium/50 py-3 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center gap-4 mb-3">
-          <div className="flex items-center gap-2 px-4 py-1.5 bg-surface-dark/60 backdrop-blur-sm rounded-full shadow-sm border border-accent-coral/30">
+          <div className="flex items-center gap-2 px-4 py-1.5 bg-surface-cream/60 backdrop-blur-sm rounded-full shadow-sm border border-accent-coral/30">
             <div className="w-2 h-2 bg-accent-coral rounded-full animate-pulse"></div>
             <span className="text-sm font-semibold text-accent-coral">最近の分析事例</span>
           </div>
@@ -29,7 +29,7 @@ export default function DiagnosisTickerBanner({ records }: DiagnosisTickerBanner
             {doubledRecords.map((record, index) => (
               <div
                 key={index}
-                className="flex items-center gap-3 bg-surface-dark/60 backdrop-blur-sm rounded-2xl px-4 py-3 border border-border-dark/50 shadow-sm whitespace-nowrap flex-shrink-0"
+                className="flex items-center gap-3 bg-surface-cream/60 backdrop-blur-sm rounded-2xl px-4 py-3 border border-border-medium/50 shadow-sm whitespace-nowrap flex-shrink-0"
                 style={{ minWidth: '280px' }}
               >
                 <div

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-dark-gradient">
+    <div className="min-h-screen bg-light-gradient">
       <div className="max-w-4xl mx-auto px-4 py-8">
         <Link
           to="/"
@@ -13,9 +13,9 @@ export default function Contact() {
           トップページに戻る
         </Link>
 
-        <div className="bg-surface-dark rounded-3xl shadow-dark-glow border border-border-dark p-8">
+        <div className="bg-surface-cream rounded-3xl shadow-soft-shadow border border-border-medium p-8">
           <div className="flex items-center gap-3 mb-6">
-            <div className="bg-dark-blue p-3 rounded-2xl">
+            <div className="bg-pale-yellow p-3 rounded-2xl">
               <Mail className="w-6 h-6 text-accent-peach" />
             </div>
             <h1 className="text-3xl font-bold text-text-primary">お問い合わせ</h1>
@@ -29,7 +29,7 @@ export default function Contact() {
 
             <section className="mb-8">
               <h2 className="text-xl font-semibold text-text-primary mb-4">受付時間</h2>
-              <div className="bg-dark-blue rounded-2xl p-4 flex items-start gap-3 border border-border-dark">
+              <div className="bg-pale-yellow rounded-2xl p-4 flex items-start gap-3 border border-border-medium">
                 <Clock className="w-5 h-5 text-accent-coral mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-semibold text-text-primary mb-1">平日 9:00-18:00</p>
@@ -54,7 +54,7 @@ export default function Contact() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-coral/20 focus:border-accent-coral transition-all text-text-primary"
+                    className="w-full px-4 py-3 bg-pale-yellow border-2 border-border-medium rounded-2xl focus:ring-4 focus:ring-accent-coral/20 focus:border-accent-coral transition-all text-text-primary"
                     placeholder="山田 太郎"
                   />
                 </div>
@@ -68,7 +68,7 @@ export default function Contact() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-coral/20 focus:border-accent-coral transition-all text-text-primary"
+                    className="w-full px-4 py-3 bg-pale-yellow border-2 border-border-medium rounded-2xl focus:ring-4 focus:ring-accent-coral/20 focus:border-accent-coral transition-all text-text-primary"
                     placeholder="example@email.com"
                   />
                 </div>
@@ -81,7 +81,7 @@ export default function Contact() {
                     id="subject"
                     name="subject"
                     required
-                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-coral/20 focus:border-accent-coral transition-all text-text-primary"
+                    className="w-full px-4 py-3 bg-pale-yellow border-2 border-border-medium rounded-2xl focus:ring-4 focus:ring-accent-coral/20 focus:border-accent-coral transition-all text-text-primary"
                   >
                     <option value="">選択してください</option>
                     <option value="service">サービス内容について</option>
@@ -100,17 +100,17 @@ export default function Contact() {
                     name="message"
                     required
                     rows={8}
-                    className="w-full px-4 py-3 bg-dark-blue border-2 border-border-dark rounded-2xl focus:ring-4 focus:ring-accent-coral/20 focus:border-accent-coral transition-all resize-none text-text-primary"
+                    className="w-full px-4 py-3 bg-pale-yellow border-2 border-border-medium rounded-2xl focus:ring-4 focus:ring-accent-coral/20 focus:border-accent-coral transition-all resize-none text-text-primary"
                     placeholder="お問い合わせ内容を詳しくご記入ください"
                   />
                 </div>
 
-                <div className="bg-dark-blue rounded-2xl p-4 border border-border-dark">
+                <div className="bg-pale-yellow rounded-2xl p-4 border border-border-medium">
                   <label className="flex items-start gap-3">
                     <input
                       type="checkbox"
                       required
-                      className="mt-1 w-4 h-4 text-accent-coral border-border-dark rounded focus:ring-accent-coral"
+                      className="mt-1 w-4 h-4 text-accent-coral border-border-medium rounded focus:ring-accent-coral"
                     />
                     <span className="text-sm text-text-secondary">
                       <Link to="/privacy" className="text-accent-coral hover:underline">プライバシーポリシー</Link>
@@ -127,7 +127,7 @@ export default function Contact() {
                 </button>
               </form>
 
-              <div className="mt-6 p-4 bg-dark-blue border border-yellow-500/30 rounded-2xl">
+              <div className="mt-6 p-4 bg-pale-yellow border border-yellow-500/30 rounded-2xl">
                 <p className="text-sm text-yellow-400">
                   <strong>注意：</strong> このフォームは現在デモ版です。実際の送信機能は実装されていません。
                   本番環境では、適切なバックエンド処理を実装する必要があります。
@@ -137,7 +137,7 @@ export default function Contact() {
 
             <section className="mb-8">
               <h2 className="text-xl font-semibold text-text-primary mb-4">投資に関するご相談について</h2>
-              <div className="bg-dark-blue border-l-4 border-accent-peach p-4 rounded-r-2xl">
+              <div className="bg-pale-yellow border-l-4 border-accent-peach p-4 rounded-r-2xl">
                 <p className="text-accent-peach font-semibold mb-2">重要なお知らせ</p>
                 <p className="text-text-secondary leading-relaxed">
                   当サービスは金融商品取引業者ではないため、個別の投資助言を行うことはできません。
@@ -146,7 +146,7 @@ export default function Contact() {
               </div>
             </section>
 
-            <div className="bg-surface-light rounded-2xl p-6 border border-border-dark">
+            <div className="bg-surface-light rounded-2xl p-6 border border-border-medium">
               <h3 className="font-semibold text-text-primary mb-3 flex items-center gap-2">
                 <Mail className="w-5 h-5 text-accent-coral" />
                 運営会社情報

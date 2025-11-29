@@ -47,7 +47,7 @@ export default function JapaneseActionButton({ onClick, disabled, loading, child
 
       {!disabled && !loading && (
         <>
-          <div className="absolute top-0 left-0 w-1 h-full bg-white opacity-30"></div>
+          <div className="absolute top-0 left-0 w-1 h-full bg-surface-light opacity-30"></div>
           <div className="absolute top-0 right-0 w-1 h-full bg-black opacity-20"></div>
         </>
       )}

@@ -111,7 +111,7 @@ export default function SessionsTab() {
   return (
     <div className="space-y-6">
       {/* Filters */}
-      <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-4">
+      <div className="bg-surface-light rounded-xl shadow-sm border border-slate-200 p-4">
         <div className="flex flex-col md:flex-row gap-4">
           {/* Search */}
           <div className="flex-1">
@@ -152,7 +152,7 @@ export default function SessionsTab() {
         </div>
 
         {filteredSessions.length === 0 ? (
-          <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-12 text-center">
+          <div className="bg-surface-light rounded-xl shadow-sm border border-slate-200 p-12 text-center">
             <p className="text-slate-600">没有找到匹配的会话</p>
           </div>
         ) : (
@@ -191,7 +191,7 @@ function SessionCard({ session, events, isExpanded, onToggle }: SessionCardProps
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+    <div className="bg-surface-light rounded-xl shadow-sm border border-slate-200 overflow-hidden">
       {/* Session Header */}
       <div
         onClick={onToggle}

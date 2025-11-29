@@ -8,7 +8,7 @@ export default function FormContainer({ children }: FormContainerProps) {
   return (
     <div className="w-[95%] mx-auto">
       <div
-        className="bg-white rounded-t-[32px] px-5 py-8 shadow-2xl"
+        className="bg-surface-light rounded-t-[32px] px-5 py-8 shadow-2xl"
         style={{
           minHeight: '40vh'
         }}

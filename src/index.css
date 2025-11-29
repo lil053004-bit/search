@@ -23,8 +23,8 @@
   }
 
   body {
-    background: #030712;
-    color: #F8FAFC;
+    background: #FFFEF5;
+    color: #2C2416;
     min-height: 100vh;
     overflow-x: hidden;
     font-family: 'Noto Sans JP', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
@@ -34,7 +34,7 @@
 
   * {
     scrollbar-width: thin;
-    scrollbar-color: #FF6F61 #1E293B;
+    scrollbar-color: #FF6F61 #FFF4D4;
   }
 
   *::-webkit-scrollbar {
@@ -43,7 +43,7 @@
   }
 
   *::-webkit-scrollbar-track {
-    background: #1E293B;
+    background: #FFF4D4;
   }
 
   *::-webkit-scrollbar-thumb {

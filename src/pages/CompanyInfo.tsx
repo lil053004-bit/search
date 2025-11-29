@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function CompanyInfo() {
   return (
-    <div className="min-h-screen bg-dark-gradient">
+    <div className="min-h-screen bg-light-gradient">
       <div className="max-w-4xl mx-auto px-4 py-8">
         <Link
           to="/"
@@ -13,9 +13,9 @@ export default function CompanyInfo() {
           トップページに戻る
         </Link>
 
-        <div className="bg-surface-dark rounded-xl shadow-dark-glow border border-border-dark p-8">
+        <div className="bg-surface-cream rounded-xl shadow-soft-shadow border border-border-medium p-8">
           <div className="flex items-center gap-3 mb-6">
-            <div className="bg-dark-blue p-3 rounded-lg">
+            <div className="bg-pale-yellow p-3 rounded-lg">
               <Building className="w-6 h-6 text-accent-coral" />
             </div>
             <h1 className="text-3xl font-bold text-text-primary">会社概要</h1>
@@ -23,7 +23,7 @@ export default function CompanyInfo() {
 
           <div className="prose max-w-none">
             <section className="mb-8">
-              <div className="bg-dark-blue rounded-lg p-6 border-l-4 border-accent-coral">
+              <div className="bg-pale-yellow rounded-lg p-6 border-l-4 border-accent-coral">
                 <h2 className="text-2xl font-bold text-text-primary mb-4">株式会社 桜テ</h2>
                 <p className="text-lg text-text-secondary mb-2">Sakurate Co., Ltd.</p>
               </div>
@@ -31,7 +31,7 @@ export default function CompanyInfo() {
 
             <section className="mb-8">
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-surface-light rounded-lg p-6 border border-border-dark">
+                <div className="bg-surface-light rounded-lg p-6 border border-border-medium">
                   <div className="flex items-start gap-3 mb-3">
                     <MapPin className="w-5 h-5 text-accent-coral mt-1 flex-shrink-0" />
                     <div>
@@ -49,7 +49,7 @@ export default function CompanyInfo() {
                   </div>
                 </div>
 
-                <div className="bg-surface-light rounded-lg p-6 border border-border-dark">
+                <div className="bg-surface-light rounded-lg p-6 border border-border-medium">
                   <div className="flex items-start gap-3 mb-3">
                     <Mail className="w-5 h-5 text-accent-peach mt-1 flex-shrink-0" />
                     <div className="flex-1">
@@ -80,7 +80,7 @@ export default function CompanyInfo() {
             </section>
 
             <section className="mb-8">
-              <div className="bg-dark-blue rounded-lg p-6 border-l-4 border-accent-coral">
+              <div className="bg-pale-yellow rounded-lg p-6 border-l-4 border-accent-coral">
                 <div className="flex items-start gap-3">
                   <Briefcase className="w-6 h-6 text-accent-coral mt-1 flex-shrink-0" />
                   <div>
@@ -100,7 +100,7 @@ export default function CompanyInfo() {
               </div>
 
               <div className="space-y-4">
-                <div className="bg-surface-light border-2 border-border-dark rounded-lg p-5 hover:border-accent-coral transition-colors">
+                <div className="bg-surface-light border-2 border-border-medium rounded-lg p-5 hover:border-accent-coral transition-colors">
                   <h4 className="font-bold text-text-primary mb-2 flex items-center gap-2">
                     <span className="w-8 h-8 bg-accent-coral text-dark-navy rounded-full flex items-center justify-center text-sm font-bold">1</span>
                     AI株式情報分析サービスの提供
@@ -110,7 +110,7 @@ export default function CompanyInfo() {
                   </p>
                 </div>
 
-                <div className="bg-surface-light border-2 border-border-dark rounded-lg p-5 hover:border-accent-coral transition-colors">
+                <div className="bg-surface-light border-2 border-border-medium rounded-lg p-5 hover:border-accent-coral transition-colors">
                   <h4 className="font-bold text-text-primary mb-2 flex items-center gap-2">
                     <span className="w-8 h-8 bg-accent-coral text-dark-navy rounded-full flex items-center justify-center text-sm font-bold">2</span>
                     デジタルマーケティング支援
@@ -120,7 +120,7 @@ export default function CompanyInfo() {
                   </p>
                 </div>
 
-                <div className="bg-surface-light border-2 border-border-dark rounded-lg p-5 hover:border-accent-coral transition-colors">
+                <div className="bg-surface-light border-2 border-border-medium rounded-lg p-5 hover:border-accent-coral transition-colors">
                   <h4 className="font-bold text-text-primary mb-2 flex items-center gap-2">
                     <span className="w-8 h-8 bg-accent-coral text-dark-navy rounded-full flex items-center justify-center text-sm font-bold">3</span>
                     Webサービス開発・運営
@@ -130,7 +130,7 @@ export default function CompanyInfo() {
                   </p>
                 </div>
 
-                <div className="bg-surface-light border-2 border-border-dark rounded-lg p-5 hover:border-accent-coral transition-colors">
+                <div className="bg-surface-light border-2 border-border-medium rounded-lg p-5 hover:border-accent-coral transition-colors">
                   <h4 className="font-bold text-text-primary mb-2 flex items-center gap-2">
                     <span className="w-8 h-8 bg-accent-coral text-dark-navy rounded-full flex items-center justify-center text-sm font-bold">4</span>
                     データ分析サービス
@@ -143,7 +143,7 @@ export default function CompanyInfo() {
             </section>
 
             <section className="mb-8">
-              <div className="bg-surface-light rounded-lg p-6 border border-border-dark">
+              <div className="bg-surface-light rounded-lg p-6 border border-border-medium">
                 <h3 className="text-xl font-bold text-text-primary mb-4">企業理念</h3>
                 <p className="text-text-secondary leading-relaxed mb-3">
                   株式会社 桜テは、AI技術を活用した情報提供サービスを通じて、
@@ -152,7 +152,7 @@ export default function CompanyInfo() {
                 <p className="text-text-secondary leading-relaxed">
                   最新のテクノロジーを活用し、分かりやすく信頼性の高い情報提供サービスを目指してまいります。
                 </p>
-                <div className="mt-4 p-4 bg-dark-blue border-l-4 border-accent-peach rounded">
+                <div className="mt-4 p-4 bg-pale-yellow border-l-4 border-accent-peach rounded">
                   <p className="text-sm text-accent-peach">
                     <strong>重要:</strong> 当社は金融商品取引業者ではありません。提供する情報は投資判断の参考情報としてご活用ください。
                   </p>
@@ -160,7 +160,7 @@ export default function CompanyInfo() {
               </div>
             </section>
 
-            <div className="bg-dark-blue rounded-lg p-6 border-2 border-accent-coral mt-8">
+            <div className="bg-pale-yellow rounded-lg p-6 border-2 border-accent-coral mt-8">
               <h3 className="font-bold text-text-primary mb-4 flex items-center gap-2">
                 <Mail className="w-5 h-5 text-accent-coral" />
                 お問い合わせ

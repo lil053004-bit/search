@@ -10,7 +10,7 @@ export default function ModernActionButton({ onClick, disabled = false }: Modern
         <button
           onClick={onClick}
           disabled={disabled}
-          className="w-full text-white font-bold py-4 px-6 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+          className="w-full text-white font-bold py-4 px-6 rounded-3xl shadow-soft-shadow-lg hover:shadow-xl transition-all duration-300 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
           style={{
             background: disabled ? '#A0AEC0' : 'linear-gradient(135deg, #2C5282 0%, #38B2AC 50%, #FFA07A 100%)',
             height: '56px',

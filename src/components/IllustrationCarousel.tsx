@@ -305,7 +305,7 @@ export default function IllustrationCarousel() {
 
           <div className="flex-1 flex flex-col items-start justify-center mt-6 mb-10 relative z-10">
             <div className="text-left mb-4 w-full">
-              <h1 className="text-4xl font-bold text-white mb-2 drop-shadow-lg">{currentItem.titleLine1}</h1>
+              <h1 className="text-4xl font-bold text-white mb-2 drop-shadow-soft-shadow-lg">{currentItem.titleLine1}</h1>
               {currentItem.titleLine2 && (
                 <div className="w-full -mx-6">
                   <div
@@ -322,7 +322,7 @@ export default function IllustrationCarousel() {
                 </div>
               )}
               {currentItem.titleLine3 && (
-                <h1 className="text-4xl font-bold text-white mt-2 drop-shadow-lg">{currentItem.titleLine3}</h1>
+                <h1 className="text-4xl font-bold text-white mt-2 drop-shadow-soft-shadow-lg">{currentItem.titleLine3}</h1>
               )}
             </div>
           </div>

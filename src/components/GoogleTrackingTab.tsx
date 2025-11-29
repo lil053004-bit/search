@@ -118,7 +118,7 @@ export default function GoogleTrackingTab() {
       </div>
 
       {/* Configuration Form */}
-      <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+      <div className="bg-surface-light rounded-xl shadow-sm border border-slate-200 p-6">
         <div className="space-y-6">
           {/* Google Ads Conversion ID */}
           <div>

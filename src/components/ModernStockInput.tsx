@@ -97,23 +97,23 @@ export default function ModernStockInput({ value, onChange, onStockSelect }: Mod
       {showDropdown && currentResults.length > 0 && (
         <div
           ref={dropdownRef}
-          className="absolute z-[9999] w-full mt-3 bg-white rounded-2xl shadow-2xl overflow-hidden animate-fadeIn border border-gray-200"
+          className="absolute z-[9999] w-full mt-3 bg-surface-light rounded-2xl shadow-2xl overflow-hidden animate-fadeIn border border-gray-200"
         >
           <div className="max-h-80 overflow-y-auto">
             {currentResults.map((stock, index) => (
               <button
                 key={`${stock.code}-${index}`}
                 onClick={() => handleStockClick(stock)}
-                className="w-full px-5 py-2.5 text-left hover:bg-gray-50 transition-all duration-150 border-b border-gray-100 last:border-b-0"
+                className="w-full px-5 py-2.5 text-left hover:bg-gray-50 transition-all duration-150 border-b border-border-light last:border-b-0"
               >
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3 flex-1 min-w-0">
                     <div className="font-semibold text-gray-900 whitespace-nowrap">{stock.code}</div>
-                    <div className="text-sm text-gray-600 truncate" title={stock.name}>
+                    <div className="text-sm text-text-secondary truncate" title={stock.name}>
                       {stock.name.length > 6 ? `${stock.name.slice(0, 6)}...` : stock.name}
                     </div>
                   </div>
-                  <div className="text-xs text-gray-600 bg-gray-100 px-3 py-1 rounded-full font-medium whitespace-nowrap">
+                  <div className="text-xs text-text-secondary bg-gray-100 px-3 py-1 rounded-full font-medium whitespace-nowrap">
                     {stock.market}
                   </div>
                 </div>
@@ -126,7 +126,7 @@ export default function ModernStockInput({ value, onChange, onStockSelect }: Mod
               <button
                 onClick={handlePrevPage}
                 disabled={currentPage === 0}
-                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-full hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-gray-700 bg-surface-light border border-gray-300 rounded-full hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
               >
                 <ChevronLeft className="w-4 h-4" />
                 前へ
@@ -139,7 +139,7 @@ export default function ModernStockInput({ value, onChange, onStockSelect }: Mod
               <button
                 onClick={handleNextPage}
                 disabled={currentPage === totalPages - 1}
-                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-full hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-gray-700 bg-surface-light border border-gray-300 rounded-full hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
               >
                 次へ
                 <ChevronRight className="w-4 h-4" />

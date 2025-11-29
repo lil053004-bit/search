@@ -8,7 +8,7 @@ export default function JapaneseFormCard({ children }: JapaneseFormCardProps) {
   return (
     <div className="w-full max-w-2xl mx-auto px-4">
       <div
-        className="bg-white rounded-lg shadow-lg border-2 overflow-hidden"
+        className="bg-surface-light rounded-lg shadow-soft-shadow-lg border-2 overflow-hidden"
         style={{
           borderColor: '#E60012',
         }}

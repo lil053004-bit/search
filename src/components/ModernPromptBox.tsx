@@ -6,7 +6,7 @@ interface ModernPromptBoxProps {
 export default function ModernPromptBox({ stockName, stockCode }: ModernPromptBoxProps) {
   return (
     <div className="animate-fadeIn" style={{ animationDelay: '0.2s' }}>
-      <div className="bg-white/10 backdrop-blur-md rounded-2xl px-6 py-4 border border-white/20">
+      <div className="bg-surface-light/10 backdrop-blur-md rounded-2xl px-6 py-4 border border-white/20">
         {stockName && stockCode ? (
           <p className="text-sm md:text-base text-gray-200 text-center leading-relaxed">
             <span className="text-modern-purple-300 font-semibold text-base md:text-lg block mb-1">

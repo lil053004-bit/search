@@ -1,6 +1,6 @@
 export default function JapaneseHeader() {
   return (
-    <header className="bg-white border-b-2 border-red-600 shadow-sm relative z-20">
+    <header className="bg-surface-light border-b-2 border-red-600 shadow-sm relative z-20">
       <div className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
@@ -15,7 +15,7 @@ export default function JapaneseHeader() {
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" fill="white"/>
                 </svg>
-                <div className="absolute -top-1 -right-1 w-4 h-4 bg-white rounded-full flex items-center justify-center">
+                <div className="absolute -top-1 -right-1 w-4 h-4 bg-surface-light rounded-full flex items-center justify-center">
                   <div className="w-2 h-2 bg-red-600 rounded-full"></div>
                 </div>
               </div>

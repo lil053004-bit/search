@@ -35,7 +35,7 @@ export default function IllustrationCard() {
           </div>
 
           <div className="absolute top-6 right-6 z-10">
-            <div className="w-16 h-16 bg-white rounded-lg shadow-lg flex items-center justify-center">
+            <div className="w-16 h-16 bg-surface-light rounded-lg shadow-soft-shadow-lg flex items-center justify-center">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <linearGradient id="bar1" x1="0" y1="0" x2="0" y2="1">
@@ -84,7 +84,7 @@ export default function IllustrationCard() {
           </div>
 
           <div className="absolute bottom-6 left-6 flex items-center space-x-[-12px] z-10">
-            <div className="w-12 h-12 rounded-full bg-white border-2 border-white shadow-md flex items-center justify-center overflow-hidden">
+            <div className="w-12 h-12 rounded-full bg-surface-light border-2 border-white shadow-md flex items-center justify-center overflow-hidden">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="24" cy="18" r="7" fill="#FFA07A" />
                 <circle cx="24" cy="16" r="6" fill="#FFB6A3" />
@@ -97,7 +97,7 @@ export default function IllustrationCard() {
               </svg>
             </div>
 
-            <div className="w-12 h-12 rounded-full bg-white border-2 border-white shadow-md flex items-center justify-center overflow-hidden">
+            <div className="w-12 h-12 rounded-full bg-surface-light border-2 border-white shadow-md flex items-center justify-center overflow-hidden">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="24" cy="18" r="7" fill="#D4A574" />
                 <circle cx="24" cy="16" r="6" fill="#E8C4A0" />
@@ -110,7 +110,7 @@ export default function IllustrationCard() {
               </svg>
             </div>
 
-            <div className="w-12 h-12 rounded-full bg-white border-2 border-white shadow-md flex items-center justify-center overflow-hidden">
+            <div className="w-12 h-12 rounded-full bg-surface-light border-2 border-white shadow-md flex items-center justify-center overflow-hidden">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="24" cy="18" r="7" fill="#F5CBA7" />
                 <circle cx="24" cy="16" r="6" fill="#FADBD8" />
@@ -123,7 +123,7 @@ export default function IllustrationCard() {
               </svg>
             </div>
 
-            <div className="w-12 h-12 rounded-full bg-white border-2 border-white shadow-md flex items-center justify-center overflow-hidden">
+            <div className="w-12 h-12 rounded-full bg-surface-light border-2 border-white shadow-md flex items-center justify-center overflow-hidden">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="24" cy="18" r="7" fill="#C9A587" />
                 <circle cx="24" cy="16" r="6" fill="#DEB887" />

@@ -106,17 +106,17 @@ export default function StockBoardDisplay() {
           </div>
 
           <div className="grid grid-cols-3 gap-4 mt-6">
-            <div className="bg-white bg-opacity-10 rounded p-3 backdrop-blur-sm border border-white border-opacity-20">
+            <div className="bg-surface-light bg-opacity-10 rounded p-3 backdrop-blur-sm border border-white border-opacity-20">
               <div className="text-gray-400 text-xs mb-1">日経平均</div>
               <div className="text-white font-bold">38,925</div>
               <div className="text-green-400 text-xs">+185</div>
             </div>
-            <div className="bg-white bg-opacity-10 rounded p-3 backdrop-blur-sm border border-white border-opacity-20">
+            <div className="bg-surface-light bg-opacity-10 rounded p-3 backdrop-blur-sm border border-white border-opacity-20">
               <div className="text-gray-400 text-xs mb-1">TOPIX</div>
               <div className="text-white font-bold">2,756</div>
               <div className="text-green-400 text-xs">+12</div>
             </div>
-            <div className="bg-white bg-opacity-10 rounded p-3 backdrop-blur-sm border border-white border-opacity-20">
+            <div className="bg-surface-light bg-opacity-10 rounded p-3 backdrop-blur-sm border border-white border-opacity-20">
               <div className="text-gray-400 text-xs mb-1">JPX400</div>
               <div className="text-white font-bold">20,345</div>
               <div className="text-red-400 text-xs">-23</div>

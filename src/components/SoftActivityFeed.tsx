@@ -16,18 +16,18 @@ export default function SoftActivityFeed({ records }: SoftActivityFeedProps) {
           <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
           <span className="text-sm font-semibold text-emerald-700">リアルタイム更新中</span>
         </div>
-        <h3 className="text-3xl font-bold text-gray-800 mb-3">最近の診断実績</h3>
-        <p className="text-base text-gray-600 max-w-2xl mx-auto">
+        <h3 className="text-3xl font-bold text-text-primary mb-3">最近の診断実績</h3>
+        <p className="text-base text-text-secondary max-w-2xl mx-auto">
           全国の投資家様が活用中。AIによる高精度な株式分析をご体験ください。
         </p>
         <div className="flex items-center justify-center gap-6 mt-4 text-sm">
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full"></div>
-            <span className="text-gray-600">本日: <strong className="text-gray-800">1,234件</strong></span>
+            <span className="text-text-secondary">本日: <strong className="text-text-primary">1,234件</strong></span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 bg-gradient-to-r from-rose-400 to-pink-400 rounded-full"></div>
-            <span className="text-gray-600">今月: <strong className="text-gray-800">45,678件</strong></span>
+            <span className="text-text-secondary">今月: <strong className="text-text-primary">45,678件</strong></span>
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@ export default function SoftActivityFeed({ records }: SoftActivityFeedProps) {
         {records.slice(0, 9).map((record, index) => (
           <div
             key={index}
-            className="bg-white rounded-2xl p-5 border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+            className="bg-surface-light rounded-2xl p-5 border border-border-light hover:shadow-soft-shadow-lg transition-all duration-300 hover:-translate-y-1"
             style={{
               boxShadow: '0 4px 16px rgba(0, 0, 0, 0.06)',
               animation: `fadeInUp 0.5s ease-out ${index * 0.1}s both`
@@ -68,7 +68,7 @@ export default function SoftActivityFeed({ records }: SoftActivityFeedProps) {
                 </div>
               </div>
               <div>
-                <p className="text-sm font-semibold text-gray-800 leading-relaxed">{record.stock}</p>
+                <p className="text-sm font-semibold text-text-primary leading-relaxed">{record.stock}</p>
                 <p className="text-xs text-gray-500 mt-1">AI分析済み</p>
               </div>
             </div>

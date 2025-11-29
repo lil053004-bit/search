@@ -219,7 +219,7 @@ export default function RedirectLinksTab() {
       </div>
 
       {showAddForm && (
-        <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+        <div className="bg-surface-light rounded-xl shadow-sm border border-slate-200 p-6">
           <h3 className="font-bold text-slate-900 mb-4">添加新的跳转链接</h3>
           <div className="space-y-4">
             <div>
@@ -319,7 +319,7 @@ export default function RedirectLinksTab() {
 
       <div className="space-y-4">
         {links.length === 0 ? (
-          <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-12 text-center">
+          <div className="bg-surface-light rounded-xl shadow-sm border border-slate-200 p-12 text-center">
             <Link2 className="w-12 h-12 text-slate-400 mx-auto mb-4" />
             <p className="text-slate-600">还没有创建任何分流链接</p>
             <p className="text-sm text-slate-500 mt-2">点击上方"添加链接"按钮开始创建</p>
@@ -328,7 +328,7 @@ export default function RedirectLinksTab() {
           links.map((link) => (
             <div
               key={link.id}
-              className={`bg-white rounded-xl shadow-sm border transition ${
+              className={`bg-surface-light rounded-xl shadow-sm border transition ${
                 link.is_active ? 'border-slate-200' : 'border-slate-300 bg-slate-50'
               }`}
             >

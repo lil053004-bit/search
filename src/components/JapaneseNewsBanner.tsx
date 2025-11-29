@@ -31,7 +31,7 @@ export default function JapaneseNewsBanner() {
             }}
           >
             <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-surface-light rounded-full animate-pulse"></div>
               <span>速報</span>
             </div>
           </div>

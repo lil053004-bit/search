@@ -5,11 +5,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative z-10 mt-20 bg-dark-slate border-t border-border-dark">
+    <footer className="relative z-10 mt-20 bg-light-yellow border-t border-border-medium">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 py-12">
-        <div className="hidden md:block bg-surface-dark border border-border-dark rounded-3xl p-8 mb-12">
+        <div className="hidden md:block bg-surface-cream border border-border-medium rounded-3xl p-8 mb-12">
           <div className="flex items-start gap-4">
-            <div className="bg-dark-blue p-3 rounded-2xl flex-shrink-0">
+            <div className="bg-pale-yellow p-3 rounded-2xl flex-shrink-0">
               <Shield className="w-6 h-6 text-accent-peach" />
             </div>
             <div className="flex-1">
@@ -19,7 +19,7 @@ export default function Footer() {
               </h3>
 
               <div className="space-y-3 text-sm leading-relaxed text-text-secondary">
-                <div className="bg-dark-blue rounded-2xl p-4 border-l-4 border-accent-coral">
+                <div className="bg-pale-yellow rounded-2xl p-4 border-l-4 border-accent-coral">
                   <p className="font-semibold text-text-primary mb-2">【サービスの性質】</p>
                   <p>
                     本サービスは、AI技術を活用した株式情報の提供および分析ツールです。
@@ -27,7 +27,7 @@ export default function Footer() {
                   </p>
                 </div>
 
-                <div className="bg-dark-blue rounded-2xl p-4 border-l-4 border-yellow-500">
+                <div className="bg-pale-yellow rounded-2xl p-4 border-l-4 border-yellow-500">
                   <p className="font-semibold text-text-primary mb-2">【投資リスクに関する警告】</p>
                   <p>
                     株式投資には価格変動リスク、信用リスク、流動性リスク等が伴い、
@@ -37,7 +37,7 @@ export default function Footer() {
                   </p>
                 </div>
 
-                <div className="bg-dark-blue rounded-2xl p-4 border-l-4 border-accent-coral">
+                <div className="bg-pale-yellow rounded-2xl p-4 border-l-4 border-accent-coral">
                   <p className="font-semibold text-text-primary mb-2">【情報の正確性について】</p>
                   <p>
                     提供される情報は、信頼できると判断した情報源から取得していますが、
@@ -46,7 +46,7 @@ export default function Footer() {
                   </p>
                 </div>
 
-                <div className="bg-dark-blue rounded-2xl p-4 border-l-4 border-accent-peach">
+                <div className="bg-pale-yellow rounded-2xl p-4 border-l-4 border-accent-peach">
                   <p className="font-semibold text-text-primary mb-2">【投資判断の責任】</p>
                   <p>
                     <strong className="text-accent-peach">最終的な投資判断は、利用者ご自身の責任において行ってください。</strong>
@@ -67,14 +67,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="md:hidden bg-surface-dark border border-accent-peach rounded-2xl p-4 text-center mb-8">
+        <div className="md:hidden bg-surface-cream border border-accent-peach rounded-2xl p-4 text-center mb-8">
           <p className="text-sm text-accent-peach font-semibold mb-1">⚠️ 重要なお知らせ</p>
           <p className="text-xs text-text-secondary leading-relaxed">
             当サービスは情報提供のみを目的としており、投資助言や投資勧誘を行うものではありません。投資判断は必ずご自身の責任で行ってください。
           </p>
         </div>
 
-        <div className="border-t border-border-dark pt-8">
+        <div className="border-t border-border-medium pt-8">
           <div className="grid grid-cols-2 gap-8 mb-8">
             <div>
               <h4 className="font-semibold text-text-primary mb-4 flex items-center gap-2">
@@ -140,7 +140,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="border-t border-border-dark pt-6 text-center">
+          <div className="border-t border-border-medium pt-6 text-center">
             <p className="text-sm text-text-primary mb-2 font-medium">
               &copy; {currentYear} 株式会社 桜テ. All rights reserved.
             </p>

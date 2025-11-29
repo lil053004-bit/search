@@ -523,13 +523,13 @@ export default function RefactoredHome() {
                 {loading && (
                   <div className="text-center py-2 animate-fadeIn">
                     <div className="inline-block animate-spin rounded-full h-10 w-10 border-4 border-emerald-200 border-t-emerald-500"></div>
-                    <p className="mt-1 text-gray-600 text-sm">株式情報を読み込み中...</p>
+                    <p className="mt-1 text-text-secondary text-sm">株式情報を読み込み中...</p>
                   </div>
                 )}
 
                 {error && diagnosisState !== 'error' && (
-                  <div className="bg-gradient-to-r from-rose-50 to-pink-50 border border-rose-200 rounded-2xl p-4 text-center animate-fadeIn mt-2">
-                    <p className="text-rose-600 text-sm font-medium">{error}</p>
+                  <div className="bg-gradient-to-r from-red-50 to-pink-50 border border-red-300 rounded-2xl p-4 text-center animate-fadeIn mt-2">
+                    <p className="text-red-600 text-sm font-medium">{error}</p>
                   </div>
                 )}
 
@@ -546,15 +546,15 @@ export default function RefactoredHome() {
                 )}
 
                 {diagnosisState === 'error' && (
-                  <div className="bg-gradient-to-r from-rose-50 to-pink-50 border-2 border-rose-300 rounded-2xl p-4 text-center animate-fadeIn mt-2">
-                    <h3 className="text-xl font-semibold text-rose-700 mb-2">分析エラー</h3>
-                    <p className="text-rose-600 text-sm mb-4 whitespace-pre-line">{error}</p>
+                  <div className="bg-gradient-to-r from-red-50 to-pink-50 border-2 border-red-400 rounded-2xl p-4 text-center animate-fadeIn mt-2">
+                    <h3 className="text-xl font-semibold text-red-700 mb-2">分析エラー</h3>
+                    <p className="text-red-600 text-sm mb-4 whitespace-pre-line">{error}</p>
                     <button
                       onClick={() => {
                         setDiagnosisState('initial');
                         setError(null);
                       }}
-                      className="px-8 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white font-semibold rounded-full transition-all shadow-lg hover:scale-105 active:scale-95"
+                      className="px-8 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white font-semibold rounded-full transition-all shadow-soft-shadow-lg hover:scale-105 active:scale-95"
                     >
                       もう一度試す
                     </button>
@@ -576,8 +576,8 @@ export default function RefactoredHome() {
         title="AI分析情報"
       >
         <div className="p-8">
-          <div className="mb-3 pb-3 border-b border-gray-100">
-            <h3 className="text-2xl font-bold text-gray-800 mb-1">{stockData?.info.name}</h3>
+          <div className="mb-3 pb-3 border-b border-border-light">
+            <h3 className="text-2xl font-bold text-text-primary mb-1">{stockData?.info.name}</h3>
             <p className="text-sm text-gray-500">銘柄コード: {stockCode}</p>
           </div>
 
@@ -586,7 +586,7 @@ export default function RefactoredHome() {
           </div>
 
           {diagnosisState === 'results' && (
-            <div className="mt-4 pt-4 border-t border-gray-100 space-y-2">
+            <div className="mt-4 pt-4 border-t border-border-light space-y-2">
               <button
                 onClick={handleLineConversion}
                 className="w-full h-14 px-8 rounded-full font-semibold text-white text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"

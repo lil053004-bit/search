@@ -11,7 +11,7 @@ export default function SoftLoadingAnimation({ progress }: SoftLoadingAnimationP
             background: 'linear-gradient(135deg, #D1FAE5 0%, #A7F3D0 100%)',
             animation: 'pulse 2s ease-in-out infinite'
           }}></div>
-          <div className="absolute inset-2 bg-white rounded-full flex items-center justify-center">
+          <div className="absolute inset-2 bg-surface-light rounded-full flex items-center justify-center">
             <svg className="w-16 h-16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="12" cy="12" r="10" stroke="#6EE7B7" strokeWidth="2" strokeDasharray="60" strokeDashoffset="15" strokeLinecap="round">
                 <animateTransform
@@ -29,7 +29,7 @@ export default function SoftLoadingAnimation({ progress }: SoftLoadingAnimationP
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-gray-800">AI診断中...</h3>
+          <h3 className="text-xl font-semibold text-text-primary">AI診断中...</h3>
           <p className="text-sm text-gray-500">株式情報を分析しています</p>
         </div>
 

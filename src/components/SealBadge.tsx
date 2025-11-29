@@ -23,14 +23,14 @@ export default function SealBadge({ text, subText }: SealBadgeProps) {
       </svg>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <div className="text-white font-bold text-lg" style={{
+        <div className="text-text-primary font-bold text-lg" style={{
           fontFamily: "'Noto Sans JP', sans-serif",
           textShadow: '1px 1px 2px rgba(0,0,0,0.3)'
         }}>
           {text}
         </div>
         {subText && (
-          <div className="text-white text-xs mt-1 opacity-90" style={{
+          <div className="text-text-primary text-xs mt-1 opacity-90" style={{
             fontFamily: "'Noto Sans JP', sans-serif"
           }}>
             {subText}
