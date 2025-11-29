@@ -1,6 +1,6 @@
 export default function SoftDivider() {
   return (
-    <div className="w-full py-8">
+    <div className="w-full py-4">
       <div className="max-w-6xl mx-auto px-4">
         <div className="relative h-px">
           <div

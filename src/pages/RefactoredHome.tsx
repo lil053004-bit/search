@@ -503,9 +503,9 @@ export default function RefactoredHome() {
         <SoftHeader />
 
         {!showLoadingScene ? (
-          <div className="flex-1 flex flex-col py-12">
-            <div className="container mx-auto space-y-12">
-              <div className="text-center space-y-4 px-4 py-8">
+          <div className="flex-1 flex flex-col py-8">
+            <div className="container mx-auto space-y-6">
+              <div className="text-center space-y-4 px-4 py-6">
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
                   やさしいAI株式診断
                 </h1>

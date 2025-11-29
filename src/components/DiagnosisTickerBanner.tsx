@@ -12,7 +12,7 @@ export default function DiagnosisTickerBanner({ records }: DiagnosisTickerBanner
   const doubledRecords = [...records, ...records];
 
   return (
-    <div className="w-full bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-50 border-y border-emerald-100 py-4 overflow-hidden">
+    <div className="w-full bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-50 border-y border-emerald-100 py-3 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center gap-4 mb-3">
           <div className="flex items-center gap-2 px-4 py-1.5 bg-white rounded-full shadow-sm border border-emerald-200">

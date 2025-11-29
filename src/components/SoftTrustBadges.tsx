@@ -1,7 +1,7 @@
 export default function SoftTrustBadges() {
   return (
-    <div className="w-full max-w-5xl mx-auto px-4 py-12">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="w-full max-w-5xl mx-auto px-4 py-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         <div
           className="bg-white rounded-3xl p-8 text-center border border-emerald-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
           style={{
