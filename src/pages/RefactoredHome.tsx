@@ -142,6 +142,7 @@ export default function RefactoredHome() {
   };
 
   const handleStockSelect = (code: string, name: string) => {
+    setInputValue(code + ' ' + name);
     setStockCode(code);
     fetchStockData(code);
   };

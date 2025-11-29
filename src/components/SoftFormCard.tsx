@@ -6,7 +6,7 @@ interface SoftFormCardProps {
 
 export default function SoftFormCard({ children }: SoftFormCardProps) {
   return (
-    <div className="w-full max-w-2xl mx-auto px-4">
+    <div className="w-full max-w-2xl mx-auto px-2">
       <div
         className="bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100"
         style={{
@@ -33,7 +33,7 @@ export default function SoftFormCard({ children }: SoftFormCardProps) {
           </div>
         </div>
 
-        <div className="p-8">
+        <div className="p-2">
           {children}
         </div>
 
